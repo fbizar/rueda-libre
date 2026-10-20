@@ -1,0 +1,30 @@
+Rueda Libre.
+
+Peticiones
+-----------------------------
+http://127.0.0.1:5500/index.html
+
+protocolo: http
+host: 127.0.0.1 (localhost)
+puerto: 5500
+ruta: /index.html (/)
+método: GET
+código de estado: 200 OK en caso de usar la ruta index.html. 304 Not Modified si solo se usa /
+
+http://127.0.0.1:5500/promociones.html
+Código de estado 404 Not Found.
+Significa que el archivo que se está intentando acceder no existe.
+
+
+
+Rol de HTML, CSS y JavaScript.
+------------------------------
+
+- El HTML permitirá la disposición de los elementos del sitio web.
+Para crear diferentes pantallas para los servicios que ofrece rueda libre (bicicletas.html, recorridos.html, contacto.html, nosotros.html, etc.)
+
+- EL CSS se usará para cambiar la apariencia del sitio, sobre todo colores y fuentes, para representar la identidad del emprendimiento. También para definir el tamaño de los elementos y sus posiciones.
+Fuente: Roboto, Colores: primario, Secundario, Acento, Fondo, Texto.
+
+- El JavaScript tiene la función de crear comportamientos e interacciones de la página que puede afectar el DOM. 
+Para cambiar el orden de las tablas de los precios del adquiler de bicicletas y los recorridos al tocar los títulos de las columnas.
