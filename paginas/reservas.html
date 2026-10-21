@@ -35,42 +35,43 @@
                 <fieldset>
                     <legend>Tus datos</legend>
                     <label for="name">Nombre Completo:</label>
-                    <input type="text" id="name" name="name" placeholder="Nombre Apellido" required minlength="2"
+                    <input type="text" id="name" name="name" placeholder="Nombre Apellido" required minlength="3"
                         maxlength="100"><br><br>
 
                     <label for="identification">Número de documento:</label>
-                    <input type="number" id="identification" name="identification" placeholder="10000000" max="9999999999"
+                    <input type="number" id="identification" name="identification" placeholder="10000000" min="100000" max="9999999999"
                         required><br><br>
 
                     <label for="email">Correo electrónico:</label>
                     <input type="email" id="email" name="email" placeholder="john.doe@example.com" required><br><br>
 
                     <label for="phone">Celular:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="300 000 0000" required><br><br>
+                    <input type="tel" id="phone" name="phone" placeholder="3001001000" pattern="3[0-9]{9}" required><br><br>
                 </fieldset>
 
                 <fieldset>
                     <legend>Tu alquiler</legend>
                     <label for="reservation-date">Fecha de alquiler:</label>
-                    <input type="date" id="reservation-date" name="reservation-date" required><br><br>
+                    <input type="date" id="reservation-date" name="reservation-date" required min="2026-11-01" max="2026-12-31"><br><br>
+                    
                     <label for="bike-type">Tipo de bicicleta:</label>
                     <select id="bike-type" name="bike-type" required>
                         <option value="" disabled selected>Seleccione un tipo</option>
                         <option value="urbana">Urbana</option>
                         <option value="montaña">Montaña</option>
                         <option value="eléctrica">Eléctrica</option>
-                    </select><br><br>
-
-                    <label for="bycicles-count">Cantidad de bicicletas:</label>
-                    <input type="number" id="bycicles-count" name="bycicles-count" min="1" max="10" value="1"
-                        required><br><br>
-
+                    </select>
                     <label for="plan">Plan:</label>
-                    <select id="plan">
+                    <select id="plan" required>
                         <option value="1">1 hora</option>
                         <option value="2">Medio día</option>
                         <option value="3">Día completo</option>
                     </select><br><br>
+
+                    <label for="bycicles-count">Cantidad de bicicletas:</label>
+                    <input type="number" id="bycicles-count" name="bycicles-count" min="1" max="6" value="1"
+                        required><br><br>
+
 
                     <label for="tour">Recorrido guiado:</label>
                     <select id="tour" name="tour" required>
@@ -83,7 +84,7 @@
                 <fieldset>
                     <legend>Confirmación</legend>
                     <label for="comments">Comentarios adicionales:</label><br>
-                    <textarea id="comments" name="comments" rows="4" cols="50"
+                    <textarea id="comments" name="comments" rows="4" cols="50" maxlength="300"
                         placeholder="(Opcional) Escribe aquí cualquier comentario o solicitud especial..."></textarea><br>
                     <p>Al enviar este formulario, aceptas nuestros términos y condiciones.</p>
                     <label for="accept-terms">
