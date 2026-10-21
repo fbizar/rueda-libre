@@ -11,65 +11,108 @@
 </head>
 
 <body>
-     <nav style="display: flex; background-color: #7c7b7b; ">
+    <nav style="display: flex; background-color: #7c7b7b; ">
         <ul style="display: flex; flex-direction: row; gap: 1rem; list-style-type: none;">
             <li><a style="text-decoration: none; color: #fff;" href="/index.html">Inicio</a></li>
             <li><a style="text-decoration: none; color: #fff;" href="/paginas/tarifas.html">Tarifas y rutas</a></li>
             <li><a style="text-decoration: none; color: #fff;" href="/paginas/reservas.html">Reservas</a></li>
         </ul>
     </nav>
-    <img src="img/cover.jpg" alt="Portada" width="768">
-    <h1>Rueda Libre</h1>
-    <p>Bienvenido, ofrecemos servicios de alquiler y organización de recorridos guiados por la ciudad de <a
-            href="#id">Medellín</a>.</p>
-    <h2>¿Quiénes somos?</h2>
-    <p>Rueda Libre es un emprendimiento de Medellín dedicado a hacer que moverse por la ciudad sea más fácil, divertido
-        y sostenible. Ofrecemos experiencias en bicicleta para quienes quieren recorrer Medellín de una forma diferente,
-        ya sea por cuenta propia o acompañados por guías que conocen los mejores caminos, miradores y rincones de la
-        ciudad. Nos mueve la pasión por la movilidad activa, el turismo responsable y el disfrute de cada trayecto.</p>
-    <h2>Nuestros servicios</h2>
-    <h3>Alquier de bicicletas</h3>
-    <a href="paginas/tarifas.html#bycicles"><img src="img/bicycles.png" alt="Alquiler de bicicletas" width="256"></a>
-    <p>Nuestro servicio de <strong>alquiler de bicicletas</strong> está pensado para quienes desean explorar la ciudad con <em>libertad,
-        comodidad y al ritmo</em> que prefieran. Contamos con <strong>bicicletas en buen estado</strong>, listas para usar, para que tengas
-        una experiencia práctica y segura desde el primer momento.</p>
-    <ul>
-        <li><strong>Libertad total</strong> para recorrer Medellín a tu propio ritmo.</li>
-        <li><strong>Ahorro en transporte</strong> y mayor flexibilidad en tus desplazamientos.</li>
-        <li><strong>Opciones cómodas y seguras</strong> para distintos tipos de usuarios.</li>
-    </ul>
-    <a href="paginas/tarifas.html#bycicles">Conoce las tarifas de nuestras bicicletas</a>
-    <h3>Recorridos guiados</h3>
-    <a href="paginas/tarifas.html#routes"><img src="img/route.png" alt="Recorridos guiados." width="256"></a>
-    <p>Los recorridos guiados de <em>Rueda Libre</em> ofrecen una forma amena y enriquecedora de conocer Medellín mientras
-        pedaleas. Acompañado por <strong>guías locales</strong>, descubrirás <em>rutas interesantes, historias de la ciudad y lugares que
-        quizás no verías por tu cuenta.</em></p>
-    <ul>
-        <li><strong>Acompañamiento experto</strong> durante todo el recorrido.</li>
-        <li><strong>Conocimiento local</strong> sobre <em>cultura, historia y puntos de interés.</em></li>
-        <li><strong>Experiencia organizada</strong> para disfrutar sin preocuparte por la ruta.</li>
-    </ul>
-    <a href="paginas/tarifas.html#routes">Conoce nuestras tarifas para rutas</a>
-    <h3>Taller básico</h3>
-    <p>Nuestro <strong>taller básico</strong> de bicicletas está diseñado para ayudarte a mantener tu bici en <em>buen estado</em> y resolver
-        problemas comunes de forma rápida. Es una opción útil tanto para ciclistas principiantes como para quienes usan
-        la bicicleta con frecuencia.</p>
-    <ul>
-        <li><strong>Mantenimiento preventivo</strong> para alargar la vida útil de la bicicleta.</li>
-        <li><strong>Solución rápida</strong> a ajustes y fallas comunes.</li>
-        <li><strong>Mayor seguridad y confianza</strong> al momento de rodar.</li>
-    </ul>
-    <h2>¿Cómo alquilar?</h2>
-    <ol>
-        <li>Elige tu bicicleta en nuestro catálogo según el tipo de recorrido que quieras hacer.</li>
-        <li>Reserva tu fecha y horario para asegurar la disponibilidad de la bici.</li>
-        <li>Realiza el pago y confirma tu reserva de forma rápida y sencilla.</li>
-        <li>Recoge tu bicicleta en nuestro punto de atención y empieza a rodar.</li>
-    </ol>
-    <h2 id="id">Encuéntranos</h2>
-    <p><a href="mailto:ruedalibre@example.com">ruedalibre@example.com</a> ·
-        <a href="https://maps.app.goo.gl/3tzAKVxV8vK4J2ea9" target="_blank">Cl. 16 #55-129, Guayabal, Medellín</a>
-    </p>
+    <header>
+        <center>
+            <img src="img/cover.jpg" alt="Portada" width="768">
+            <h1>Rueda Libre</h1>
+            <p>Bienvenido, ofrecemos servicios de alquiler y organización de recorridos guiados por la ciudad de <a
+                    href="#id">Medellín</a>.</p>
+        </center>
+    </header>
+
+    <main>
+        <section id="about-us">
+            <h2>¿Quiénes somos?</h2>
+            <p>Rueda Libre es un emprendimiento de Medellín dedicado a hacer que moverse por la ciudad sea más fácil,
+                divertido
+                y sostenible. Ofrecemos experiencias en bicicleta para quienes quieren recorrer Medellín de una forma
+                diferente,
+                ya sea por cuenta propia o acompañados por guías que conocen los mejores caminos, miradores y rincones
+                de la
+                ciudad. Nos mueve la pasión por la movilidad activa, el turismo responsable y el disfrute de cada
+                trayecto.</p>
+        </section>
+
+        <section id="services">
+            <h2>Nuestros servicios</h2>
+            <article>
+                <h3>Alquier de bicicletas</h3>
+                <a href="paginas/tarifas.html#bycicles"><img src="img/bicycles.png" alt="Alquiler de bicicletas"
+                        width="256"></a>
+                <p>Nuestro servicio de <strong>alquiler de bicicletas</strong> está pensado para quienes desean explorar
+                    la ciudad con <em>libertad,
+                        comodidad y al ritmo</em> que prefieran. Contamos con <strong>bicicletas en buen
+                        estado</strong>, listas para usar, para que tengas
+                    una experiencia práctica y segura desde el primer momento.</p>
+                <ul>
+                    <li><strong>Libertad total</strong> para recorrer Medellín a tu propio ritmo.</li>
+                    <li><strong>Ahorro en transporte</strong> y mayor flexibilidad en tus desplazamientos.</li>
+                    <li><strong>Opciones cómodas y seguras</strong> para distintos tipos de usuarios.</li>
+                </ul>
+                <a href="paginas/tarifas.html#bycicles">Conoce las tarifas de nuestras bicicletas</a>
+            </article>
+            <article>
+                <h3>Recorridos guiados</h3>
+                <a href="paginas/tarifas.html#routes"><img src="img/route.png" alt="Recorridos guiados."
+                        width="256"></a>
+                <p>Los recorridos guiados de <em>Rueda Libre</em> ofrecen una forma amena y enriquecedora de conocer
+                    Medellín mientras
+                    pedaleas. Acompañado por <strong>guías locales</strong>, descubrirás <em>rutas interesantes,
+                        historias de la ciudad y lugares que
+                        quizás no verías por tu cuenta.</em></p>
+                <ul>
+                    <li><strong>Acompañamiento experto</strong> durante todo el recorrido.</li>
+                    <li><strong>Conocimiento local</strong> sobre <em>cultura, historia y puntos de interés.</em></li>
+                    <li><strong>Experiencia organizada</strong> para disfrutar sin preocuparte por la ruta.</li>
+                </ul>
+                <a href="paginas/tarifas.html#routes">Conoce nuestras tarifas para rutas</a>
+            </article>
+            <article>
+                <h3>Taller básico</h3>
+                <p>Nuestro <strong>taller básico</strong> de bicicletas está diseñado para ayudarte a mantener tu bici
+                    en <em>buen estado</em> y resolver
+                    problemas comunes de forma rápida. Es una opción útil tanto para ciclistas principiantes como para
+                    quienes usan
+                    la bicicleta con frecuencia.</p>
+                <ul>
+                    <li><strong>Mantenimiento preventivo</strong> para alargar la vida útil de la bicicleta.</li>
+                    <li><strong>Solución rápida</strong> a ajustes y fallas comunes.</li>
+                    <li><strong>Mayor seguridad y confianza</strong> al momento de rodar.</li>
+                </ul>
+            </article>
+        </section>
+        <section id="rent">
+            <h2>¿Cómo alquilar?</h2>
+            <ol>
+                <li>Elige tu bicicleta en nuestro catálogo según el tipo de recorrido que quieras hacer.</li>
+                <li>Reserva tu fecha y horario para asegurar la disponibilidad de la bici.</li>
+                <li>Realiza el pago y confirma tu reserva de forma rápida y sencilla.</li>
+                <li>Recoge tu bicicleta en nuestro punto de atención y empieza a rodar.</li>
+            </ol>
+        </section>
+        <section id="contact">
+            <h2>Encuéntranos</h2>
+            <p>Si tienes preguntas, sugerencias o quieres hacer una reservación, no dudes en contactarnos. Estamos aquí
+                para ayudarte a
+                disfrutar de la mejor experiencia en bicicleta en Medellín.</p>
+            <ul>
+                <li><strong>Correo electrónico:</strong> <a
+                        href="mailto:ruedalibre@example.com">ruedalibre@example.com</a></li>
+                <li><strong>Ubicación:</strong> <a href="https://maps.app.goo.gl/3tzAKVxV8vK4J2ea9" target="_blank">Cl.
+                        16 #55-129, Guayabal, Medellín</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Rueda Libre. Todos los derechos reservados.</p>
+    </footer>
 </body>
 
 </html>
