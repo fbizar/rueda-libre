@@ -15,6 +15,15 @@ http://127.0.0.1:5500/promociones.html
 Código de estado 404 Not Found.
 Significa que el archivo que se está intentando acceder no existe.
 
+http://localhost:5500/paginas/tarifas.html
+método: GET
+Código de estado: 200 OK
+
+http://localhost:5500/paginas/reservas.html
+método: GET
+Código de estado: 200 OK
+
+
 
 
 Rol de HTML, CSS y JavaScript.
@@ -28,3 +37,16 @@ Fuente: Roboto, Colores: primario, Secundario, Acento, Fondo, Texto.
 
 - El JavaScript tiene la función de crear comportamientos e interacciones de la página que puede afectar el DOM. 
 Para cambiar el orden de las tablas de los precios del adquiler de bicicletas y los recorridos al tocar los títulos de las columnas.
+
+
+Tabla de rutas
+-----------------------------
+paginas/
+    reservas.html
+    tarifas.html
+img/
+    bicycles.png  
+    cover.jpg  
+    route.png
+bitacora.txt
+index.html
