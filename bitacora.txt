@@ -41,15 +41,29 @@ Para cambiar el orden de las tablas de los precios del adquiler de bicicletas y 
 
 Tabla de rutas
 -----------------------------
-paginas/
-    reservas.html
-    tarifas.html
-img/
-    bicycles.png  
-    cover.jpg  
-    route.png
-bitacora.txt
-index.html
++---------------+-----------------------------------------------------------------+
+|               |                Rutas relativas hacia...                         |
+|    Origen     +----------------+-----------------------+------------------------+
+|               |   index.html   |      tarifas.html     |      reservas.html     |
++---------------+----------------------------------------+------------------------+
+| index.html    |  index.html    |  paginas/tarifas.html | paginas/reservas.html  | 
++---------------+----------------+-----------------------+------------------------+
+| tarifas.html  |  ../index.html |  tarifas.html         | reservas.html          |
++---------------+----------------+-----------------------+------------------------+
+| reservas.html |  ../index.html |  tarifas.html         | reservas.html          |
++---------------+----------------+-----------------------+------------------------+
+
+{ Nota: }
+Usando rutas absolutas (empezando con /) se evita tener que modificar los links para cada página.
+Por lo que si en todos los origenes se usa:
+
+/index.html
+/paginas/tarifas.html
+/paginas/reservas.html
+
+Funciona y no había por que cambiarlo en cada uno para evitar el error 404.
+
+
 
 
 Cambios de accesibilidad
