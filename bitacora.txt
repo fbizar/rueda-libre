@@ -61,7 +61,7 @@ Por lo que si en todos los origenes se usa:
 /paginas/tarifas.html
 /paginas/reservas.html
 
-Funciona y no había por que cambiarlo en cada uno para evitar el error 404.
+Funciona y no habría por que cambiarlo en cada uno para evitar el error 404.
 
 
 
