@@ -127,6 +127,13 @@ Usos de colores
 +------------------------+----------------------------------------------------+
 
 
+Conflictos de selectores
+----------------------------------------
+#menu a y .activo no estaban funcionando porque no hay ningún elemento en el html que tenga referenciado el id y clase declarados.
+A pesar de que #menu tiene seguido un "a", este segundo no se aplica porque es necesario que estos links estén contenidos por un padre que tenga el id menu.
+Tal cuál como expresa su especificidad (1,0,1) = (id,-,elemento)
+.activo solo requiere que cualquier elemento defina como valor "activo" del atributo class, ya que su especificidad es solo clases (0,1,0)
+
 Layout
 -----------------------------------------
 

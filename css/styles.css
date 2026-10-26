@@ -5,6 +5,7 @@
   --color-azul-noche: #14213D;
   --color-crema: #FAF6EF;
   --color-gris-asfalto: #5B6470;
+  --color-blanco: #FFFFFF; /* Color de texto para fondos oscuros */
 
   /* Fuentes */
   --font-heading: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
@@ -44,10 +45,82 @@ a {
   background-color: var(--color-verde-ruta);
   color: #fff;
   padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--space-xs);
+  text-decoration: none;
+  border: none;
+}
+
+.btn-primario:hover {
+  background-color: var(--color-verde-ruta);
+  opacity: 0.8;
 }
 
 .btn-secundario {
   background-color: var(--color-naranja-pedal);
   color: var(--color-azul-noche);
   padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--space-xs);
+  text-decoration: none;
+  border: none;
+}
+
+.btn-secundario:hover {
+  background-color: var(--color-naranja-pedal);
+  opacity: 0.8;
+}
+
+/* Menu */
+nav {
+  background-color: var(--color-azul-noche);
+  padding: var(--space-sm) var(--space-md);
+}
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#menu a {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--color-blanco);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+#menu a:hover,
+#menu a.activo {
+  background-color: var(--color-naranja-pedal);
+  color: var(--color-azul-noche);
+  font-weight: 600;
+}
+
+#menu a:focus { 
+  outline: 3px solid var(--color-naranja-pedal);
+  outline-offset: 2px;
+}
+.activo { color: var(--color-verde-ruta); font-weight: 600; }
+
+.logo
+{
+  font-family: var(--font-heading);
+  color: var(--color-blanco);
+  font-size: 1.5rem;
+  margin-right: var(--space-2xl);
+}
+
+/* Forms */
+input, select, textarea {
+  border: 1px solid var(--color-gris-asfalto);
+  border-radius: var(--space-xs);
+  font-family: var(--font-body);
+}
+
+input :focus, select:focus, textarea:focus {
+  border-color: var(--color-naranja-pedal);
+  outline: 1px solid var(--color-naranja-pedal);
 }
