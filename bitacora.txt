@@ -68,61 +68,75 @@ Funciona y no habría por que cambiarlo en cada uno para evitar el error 404.
 
 Cambios de accesibilidad
 -----------------------------------------
-- Mejora los alt de las imágenes: portada, bicicleta y rutas por algo más descriptivo:
-1. Portada Rueda Libre.
-2. Alquila nuestras bicicletas.
-3. Ilustración de rutas.
+1. Se ha mejorado los alt de las imágenes: portada, bicicleta y rutas por algo más descriptivo:
+    - Portada Rueda Libre.
+    - Alquila nuestras bicicletas.
+    - Ilustración de rutas.
 
-- Cambia lang en tarifas.html y reservas.html de "en" a "es".
+2. Se ha cambiado el valor de la propiedad lang en tarifas.html y reservas.html de "en" a "es".
+3. Se ha quitado el texto de acepta términos y condiciones en reservas.html, que estaba antes del checkbox que también tiene un texto similar.
+4. Se agregó el correo de rueda libre al footer en todas las páginas.
+5. Se quitaron los títulos que estaban antes de las tablas en tarifas.html, que de por si ya eran redundantes.
+6. Se agregaron los links "¿Donde encontrarnos?" y "Reserva ahora" en el primer párrafo de la pagina de inicio.
 
+Colores
+--------------------------------------------
 > Contraste de textos normales y grandes y fondos.
-Verde Ruta
-#1E7A4F
++-------------------+-------------------+--------------+---------------------+--------------------------+
+|                   |                   |              |    Texto Normal     |       Texto grande       |
+|  Color de texto   |  Color de fondo   |   Contrast   +----------+----------+------------+-------------+
+|                   |                   |    Ratio     |  WCAG AA | WCAG AAA |  WCAG AA   |   WCAG AAA  |
++-------------------+-------------------+--------------+----------+----------+------------+-------------+
+|   Blanco          |   Verde Ruta      |   5.31:1     |   Pass   |   Fail   |   Pass     |    Pass     |
+|   #ffffff       |   #1E7A4F       |     O        |     O    |    X     |     O      |      O      |
++-------------------+-------------------+--------------+----------+----------+------------+-------------+
+|   Blanco          |   Naranja Pedal   |   2.21:1     |   Fail   |   Fail   |   Fail     |    Fail     |
+|   #ffffff       |  #F39A2B        |              |     X    |    X     |     X      |      X      |
++-------------------+-------------------+--------------+----------+----------+------------+-------------+
+|   Azul Noche      |   Naranja Pedal   |   7.2:1      |   Pass   |   Pass   |    Pass    |    Pass     |
+|   #14213D       |  #F39A2B        |      O       |     O    |    O     |     O      |      O      |
++-------------------+-------------------+--------------+----------+----------+------------+-------------+
+|   Azul Noche      |   Crema           |   14.82:1    |   Pass   |   Pass   |    Pass    |    Pass     |
+|   #14213D       |   #FAF6EF       |      O       |     O    |    O     |     O      |      O      |
++-------------------+-------------------+--------------+----------+----------+------------+-------------+
+|   Gris Asfalto    |   Crema           |   5.56:1     |   Pass   |   Fail   |    Pass    |    Pass     |
+|   #5B6470       |  #FAF6EF        |      O       |     O    |    X     |     O      |      O      |
++-------------------+-------------------+--------------+----------+----------+------------+-------------+
+|   Verde Ruta      |   Crema           |   4.93:1     |   Pass   |   Fail   |    Pass    |    Pass     |
+|   #1E7A4F       |  #FAF6EF        |      O       |     O    |    X     |     O      |      O      |
++-------------------+-------------------+--------------+----------+----------+------------+-------------+
+|   Naranja Pedal   |   Crema           |   2.05:1     |   Fail   |   Fail   |   Fail     |    Fail     |
+|   #F39A2B       |  #FAF6EF        |              |     X    |    X     |     X      |      X      |
++-------------------+-------------------+--------------+----------+----------+------------+-------------+
+|   Blanco          |   Azul Noche      |   15.97:1    |   Pass   |   Pass   |   Pass     |    Pass     |
+|   #ffffff       |  #14213D        |       O      |     O    |    O     |     O      |     O       |
++-------------------+-------------------+--------------+----------+----------+------------+-------------+
 
-Naranja Pedal
-#F39A2B
-
-Azul Noche
-#14213D
-
-Crema
-#FAF6EF
-
-Gris Asfalto
-#5B6470
-	
-1. Texto blanco sobre Verde Ruta:
-    - Normal: parcial
-    - Grande: apto
-
-2. Blanco sobre Naranja Pedal
-    - Normal: no apto
-    - Grande: no apto
-
-3. Azul Noche sobre Naranja Pedal
-    - Normal: apto
-    - Grande: apto
-
-4. Azul Noche sobre Crema
-    - Normal: apto
-    - Grande: apto
-
-5. Gris Asfalto sobre Crema
-    - Normal: parcial
-    - Grande: apto
-
-6. Verde Ruta sobre Crema
-    - Normal: parcial
-    - Grande: apto
-
-7. Naranja Pedal sobre Crema
-    - Normal: no apto
-    - Grande: no apto
-
-8. Blanco sobre Azul Noche.
-    - Normal: apto
-    - Grande: apto
-
+Usos de colores
+-------------------------------------------------
++------------------------+----------------------------------------------------+
+| Color                  | Uso (elemento)                                     |
++------------------------+----------------------------------------------------+
+| Azul Noche             | Títulos (H1-H6)                                    |
+| #14213D              | Texto del cuerpo (párrafos)                        |
+|                        | Fondo de header y footer (texto blanco)            |
+|                        | Texto del botón secundario                         |
++------------------------+----------------------------------------------------+
+| Gris Asfalto           | Texto secundario                                   |
+| #5B6470              |                                                    |
++------------------------+----------------------------------------------------+
+| Crema                  | Fondo general                                      |
+| #FAF6EF              |                                                    |
++------------------------+----------------------------------------------------+
+| Verde Ruta             | Fondo del botón principal (texto blanco)           |
+| #1E7A4F              | Enlaces (sobre fondo Crema)                        |
++------------------------+----------------------------------------------------+
+| Naranja Pedal          | Fondo del botón secundario y destacados            |
+| #F39A2B              | (solo con texto Azul Noche)                        |
++------------------------+----------------------------------------------------+
+| Blanco                 | Texto sobre Verde Ruta y sobre Azul Noche          |
+| #FFFFFF              |                                                    |
++------------------------+----------------------------------------------------+
 
 
 Layout
