@@ -5,19 +5,26 @@
   --color-azul-noche: #14213D;
   --color-crema: #FAF6EF;
   --color-gris-asfalto: #5B6470;
-  --color-blanco: #FFFFFF; /* Color de texto para fondos oscuros */
+  --color-blanco: #FFFFFF;
+  /* Color de texto para fondos oscuros */
 
   /* Fuentes */
   --font-heading: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   --font-body: 'Open Sans', 'Segoe UI', Roboto, Arial, sans-serif;
 
   /* Escala de espaciado */
-  --space-xs: 0.25rem;  /*  4px */
-  --space-sm: 0.5rem;   /*  8px */
-  --space-md: 1rem;     /* 16px */
-  --space-lg: 1.5rem;   /* 24px */
-  --space-xl: 2rem;     /* 32px */
-  --space-2xl: 3rem;    /* 48px */
+  --space-xs: 0.25rem;
+  /*  4px */
+  --space-sm: 0.5rem;
+  /*  8px */
+  --space-md: 1rem;
+  /* 16px */
+  --space-lg: 1.5rem;
+  /* 24px */
+  --space-xl: 2rem;
+  /* 32px */
+  --space-2xl: 3rem;
+  /* 48px */
 }
 
 body {
@@ -27,7 +34,12 @@ body {
   padding: var(--space-md);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   margin-bottom: var(--space-sm);
 }
@@ -74,6 +86,7 @@ nav {
   background-color: var(--color-azul-noche);
   padding: var(--space-sm) var(--space-md);
 }
+
 #menu {
   display: flex;
   flex-wrap: wrap;
@@ -82,6 +95,7 @@ nav {
   padding: 0;
   list-style: none;
 }
+
 #menu a {
   display: block;
   padding: var(--space-sm) var(--space-md);
@@ -99,14 +113,17 @@ nav {
   font-weight: 600;
 }
 
-#menu a:focus { 
+#menu a:focus {
   outline: 3px solid var(--color-naranja-pedal);
   outline-offset: 2px;
 }
-.activo { color: var(--color-verde-ruta); font-weight: 600; }
 
-.logo
-{
+.activo {
+  color: var(--color-verde-ruta);
+  font-weight: 600;
+}
+
+.logo {
   font-family: var(--font-heading);
   color: var(--color-blanco);
   font-size: 1.5rem;
@@ -114,13 +131,22 @@ nav {
 }
 
 /* Forms */
-input, select, textarea {
-  border: 1px solid var(--color-gris-asfalto);
-  border-radius: var(--space-xs);
+input,
+select,
+textarea {
+  border: 2px solid var(--color-gris-asfalto);
+  border-radius: 0.5rem;
+  background-color: var(--color-blanco);
+  padding: var(--space-sm) var(--space-md);
   font-family: var(--font-body);
+  box-shadow: 0 0 0 10px transparent;
+  transition: border-color 0.15s ease, box-shadow 0.3s ease-out;
 }
 
-input :focus, select:focus, textarea:focus {
-  border-color: var(--color-naranja-pedal);
-  outline: 1px solid var(--color-naranja-pedal);
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid transparent;
+  border-color: var(--color-verde-ruta);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-verde-ruta) 20%, transparent);
 }
