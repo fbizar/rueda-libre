@@ -53,18 +53,6 @@ Tabla de rutas
 | reservas.html |  ../index.html |  tarifas.html         | reservas.html          |
 +---------------+----------------+-----------------------+------------------------+
 
-{ Nota: }
-Usando rutas absolutas (empezando con /) se evita tener que modificar los links para cada página.
-Por lo que si en todos los origenes se usa:
-
-/index.html
-/paginas/tarifas.html
-/paginas/reservas.html
-
-Funciona y no habría por que cambiarlo en cada uno para evitar el error 404.
-
-
-
 
 Cambios de accesibilidad
 -----------------------------------------
