@@ -1,0 +1,53 @@
+:root {
+  /* Colores */
+  --color-verde-ruta: #1E7A4F;
+  --color-naranja-pedal: #F39A2B;
+  --color-azul-noche: #14213D;
+  --color-crema: #FAF6EF;
+  --color-gris-asfalto: #5B6470;
+
+  /* Fuentes */
+  --font-heading: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Open Sans', 'Segoe UI', Roboto, Arial, sans-serif;
+
+  /* Escala de espaciado */
+  --space-xs: 0.25rem;  /*  4px */
+  --space-sm: 0.5rem;   /*  8px */
+  --space-md: 1rem;     /* 16px */
+  --space-lg: 1.5rem;   /* 24px */
+  --space-xl: 2rem;     /* 32px */
+  --space-2xl: 3rem;    /* 48px */
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-azul-noche);
+  background-color: var(--color-crema);
+  padding: var(--space-md);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin-bottom: var(--space-sm);
+}
+
+.texto-secundario {
+  color: var(--color-gris-asfalto);
+}
+
+a {
+  color: var(--color-verde-ruta);
+  text-decoration: underline;
+}
+
+.btn-primario {
+  background-color: var(--color-verde-ruta);
+  color: #fff;
+  padding: var(--space-sm) var(--space-lg);
+}
+
+.btn-secundario {
+  background-color: var(--color-naranja-pedal);
+  color: var(--color-azul-noche);
+  padding: var(--space-sm) var(--space-lg);
+}
