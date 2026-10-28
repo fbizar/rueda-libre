@@ -39,6 +39,7 @@ body {
 main{
   width: 96rem;
   margin: 0 auto;
+  padding-bottom: var(--space-md);
 }
 
 h1,
@@ -152,6 +153,34 @@ header
   padding: var(--space-md);
 }
 
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding: var(--space-xl) var(--space-lg);
+  background-color: var(--color-azul-noche);
+  color: var(--color-blanco);
+}
+
+footer p {
+  margin: 0 0 var(--space-sm);
+}
+
+footer a {
+  color: var(--color-naranja-pedal);
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: var(--color-blanco);
+}
+
+footer a:focus-visible {
+  outline: 3px solid var(--color-blanco);
+  outline-offset: 2px;
+}
+
 /* Forms */
 input,
 select,
@@ -171,6 +200,22 @@ textarea:focus-visible {
   outline: 2px solid transparent;
   border-color: var(--color-verde-ruta);
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-verde-ruta) 20%, transparent);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+fieldset
+{
+  display: flex;
+  flex-flow: column wrap;
+  border: 2px solid var(--color-gris-asfalto);
+  border-radius: 8px;
+  gap: var(--space-md);
+  padding: var(--space-lg);
 }
 
 /* Index.html */
@@ -209,6 +254,24 @@ textarea:focus-visible {
   border-radius: 8px;
 }
 
+/* reservas.html */
+#schedule
+{
+  width: fit-content;
+
+  & dt 
+  {
+    font-weight: 600;
+  }
+}
+
+#btn-submit
+{
+  align-self: center;
+  width: 50%;
+  font-weight: 600;
+}
+
 
 /* Table */
 table {
@@ -217,7 +280,7 @@ table {
   background-color: var(--color-blanco);
   color: var(--color-azul-noche);
   font-family: var(--font-body);
-  border-radius: 0.75rem;
+  border-radius: 16px;
   overflow: hidden;
 }
 
@@ -264,3 +327,4 @@ td a {
   color: var(--color-verde-ruta);
   text-decoration: underline;
 }
+

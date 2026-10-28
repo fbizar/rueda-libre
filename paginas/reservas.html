@@ -40,25 +40,25 @@
                     <legend>Tus datos</legend>
                     <label for="name">Nombre Completo:</label>
                     <input type="text" id="name" name="name" placeholder="Nombre Apellido" required minlength="3"
-                        maxlength="100"><br><br>
+                        maxlength="100">
 
                     <label for="identification">Número de documento:</label>
                     <input type="number" id="identification" name="identification" placeholder="10000000" min="100000"
-                        max="9999999999" required><br><br>
+                        max="9999999999" required>
 
                     <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="tucorreo@example.com" required><br><br>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@example.com" required>
 
                     <label for="phone">Celular:</label>
                     <input type="tel" id="phone" name="phone" placeholder="3001001000" pattern="3[0-9]{9}"
-                        required><br><br>
+                        required>
                 </fieldset>
 
                 <fieldset>
                     <legend>Tu alquiler</legend>
                     <label for="reservation-date">Fecha de alquiler:</label>
                     <input type="date" id="reservation-date" name="reservation-date" required min="2026-11-01"
-                        max="2026-12-31"><br><br>
+                        max="2026-12-31">
 
                     <label for="bike-type">Tipo de bicicleta:</label>
                     <select id="bike-type" name="bike-type" required>
@@ -72,11 +72,11 @@
                         <option value="1">1 hora</option>
                         <option value="2">Medio día</option>
                         <option value="3">Día completo</option>
-                    </select><br><br>
+                    </select>
 
                     <label for="bycicles-count">Cantidad de bicicletas:</label>
                     <input type="number" id="bycicles-count" name="bycicles-count" min="1" max="6" value="1"
-                        required><br><br>
+                        required>
 
 
                     <label for="tour">Recorrido guiado:</label>
@@ -85,23 +85,22 @@
                         <option value="rio-parques">Río y Parques</option>
                         <option value="cultura-historia">Sabores de Barrio</option>
                         <option value="miradores">Reto de Las Palmas</option>
-                    </select><br><br>
+                    </select>
                 </fieldset>
                 <fieldset>
                     <legend>Confirmación</legend>
-                    <label for="comments">Comentarios adicionales:</label><br>
+                    <label for="comments">Comentarios adicionales:</label>
                     <textarea id="comments" name="comments" rows="4" cols="50" maxlength="300"
-                        placeholder="(Opcional) Escribe aquí cualquier comentario o solicitud especial..."></textarea><br>
+                        placeholder="(Opcional) Escribe aquí cualquier comentario o solicitud especial..."></textarea>
                     <label for="accept-terms">
                         <input type="checkbox" id="accept-terms" name="accept-terms" required>
                         Acepto que he leído los <a href="/#" target="_blank">términos y condiciones</a> .
                     </label>
                 </fieldset>
-                <br>
-                <input class="btn-primario" type="submit" value="Reservar">
+                <input id="btn-submit" class="btn-primario" type="submit" value="Reservar">
             </form>
         </section>
-        <section id="schedule">
+        <section id="schedule" class="tarjeta">
             <h2>Horarios</h2>
             <dl>
                 <dt>Lunes a viernes</dt>
