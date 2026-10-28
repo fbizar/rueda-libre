@@ -27,8 +27,8 @@
         </ul>
     </nav>
     <header>
-            <a href="../index.html"><img src="../img/cover.jpg" alt="Portada Rueda Libre" width="768"></a>
-            <h1>Reserva tu bicicleta</h1>
+        <a href="../index.html"><img src="../img/cover.jpg" alt="Portada Rueda Libre" width="768"></a>
+        <h1>Reserva tu bicicleta</h1>
     </header>
 
     <main>
@@ -41,15 +41,14 @@
                         maxlength="100">
 
                     <label for="identification">Número de documento:</label>
-                    <input type="number" id="identification" name="identification" placeholder="10000000" min="100000"
-                        max="9999999999" required>
+                    <input type="text" id="identification" name="identification" placeholder="10000000"
+                        inputmode="numeric" pattern="[0-9]{6,10}" minlength="6" maxlength="10" required>
 
                     <label for="email">Correo electrónico:</label>
                     <input type="email" id="email" name="email" placeholder="tucorreo@example.com" required>
 
                     <label for="phone">Celular:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="3001001000" pattern="3[0-9]{9}"
-                        required>
+                    <input type="tel" id="phone" name="phone" placeholder="3001001000" pattern="3[0-9]{9}" required>
                 </fieldset>
 
                 <fieldset>
@@ -73,8 +72,7 @@
                     </select>
 
                     <label for="bycicles-count">Cantidad de bicicletas:</label>
-                    <input type="number" id="bycicles-count" name="bycicles-count" min="1" max="6" value="1"
-                        required>
+                    <input type="number" id="bycicles-count" name="bycicles-count" min="1" max="6" value="1" required>
 
 
                     <label for="tour">Recorrido guiado:</label>
