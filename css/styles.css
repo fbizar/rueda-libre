@@ -94,6 +94,7 @@ nav {
   display: flex;
   flex-flow: row wrap;
   align-items: center;  
+  justify-content: space-between;
   background-color: var(--color-azul-noche);
   padding: var(--space-sm) var(--space-md);
 }
@@ -157,28 +158,42 @@ header
 footer {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   margin-top: auto;
   padding: var(--space-xl) var(--space-lg);
-  background-color: var(--color-azul-noche);
-  color: var(--color-blanco);
+  gap: var(--space-xl);
+  background-color: var(--color-blanco);
+}
+
+footer > div 
+{
+  display: flex;
+  flex-direction: column;
 }
 
 footer p {
-  margin: 0 0 var(--space-sm);
+  margin: 0;
 }
 
-footer a {
-  color: var(--color-naranja-pedal);
-  text-decoration: underline;
-}
-
-footer a:hover {
+/* Floating */
+#btn-whatsapp
+{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: fixed;
+  bottom: var(--space-md);
+  right: var(--space-md);
+  padding: var(--space-md);
+  border-radius: 100%;
+  text-decoration: none;
+  background-color: #4AE383;
   color: var(--color-blanco);
 }
 
-footer a:focus-visible {
-  outline: 3px solid var(--color-blanco);
-  outline-offset: 2px;
+#btn-whatsapp:hover
+{
+  background-color: var(--color-gris-asfalto);
 }
 
 /* Forms */
@@ -221,16 +236,8 @@ fieldset
 /* Index.html */
 #services{
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   gap: var(--space-md)
-}
-
-#services > h2 {
-  flex: 0 0 100%;
-}
-
-#services > article {
-  flex: 1 1 16rem;
 }
 
 .tarjeta
@@ -252,6 +259,24 @@ fieldset
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.tarjeta.nuevo
+{
+  box-shadow: 0 0 10px 2px var(--color-naranja-pedal);
+}
+
+.etiqueta-nuevo
+{
+  display: inline-flex;
+  position: absolute;
+  width: fit-content;
+  align-self: flex-end;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 4px;
+  background-color: var(--color-naranja-pedal);
+  font-weight: 600;
+  box-shadow: 0 0 10px 2px var(--color-naranja-pedal);
 }
 
 /* reservas.html */
