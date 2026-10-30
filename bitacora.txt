@@ -1,5 +1,10 @@
 Rueda Libre.
 
+######################################
+            Semana 1
+######################################
+
+
 Peticiones
 -----------------------------
 http://127.0.0.1:5500/index.html
@@ -126,14 +131,6 @@ Usos de colores
 | #FFFFFF              |                                                    |
 +------------------------+----------------------------------------------------+
 
-
-Conflictos de selectores
-----------------------------------------
-#menu a y .activo no estaban funcionando porque no hay ningún elemento en el html que tenga referenciado el id y clase declarados.
-A pesar de que #menu tiene seguido un "a", este segundo no se aplica porque es necesario que estos links estén contenidos por un padre que tenga el id menu.
-Tal cuál como expresa su especificidad (1,0,1) = (id,-,elemento)
-.activo solo requiere que cualquier elemento defina como valor "activo" del atributo class, ya que su especificidad es solo clases (0,1,0)
-
 Layout
 -----------------------------------------
 
@@ -179,3 +176,33 @@ Layout
 +------------------------------------------------------------+
 |   <footer> Copyright                                       |
 +------------------------------------------------------------+
+
+######################################################
+                    Semana 2
+######################################################
+
+Herencia de propiedades
+---------------------------------------
++--------------+-------------------+------------------------------+
+|   Elemento   | Heredadas de body |   No Heredadas de body       |   
++--------------+-------------------+------------------------------+
+|   <p>        | color: var(...);  | background-color: var (...); |
++--------------+-------------------+------------------------------+
+
+
+Conflictos de selectores
+----------------------------------------
+#menu a y .activo no estaban funcionando porque no hay ningún elemento en el html que tenga referenciado el id y clase declarados.
+A pesar de que #menu tiene seguido un "a", este segundo no se aplica porque es necesario que estos links estén contenidos por un padre que tenga el id menu.
+Tal cuál como expresa su especificidad (1,0,1) = (id,-,elemento)
+.activo solo requiere que cualquier elemento defina como valor "activo" del atributo class, ya que su especificidad es solo clases (0,1,0)
+
+
+Tamaños con y sin box-sizing: border-box
+---------------------------------------------
+
+tarjeta - recorridos guiados | 
+1. 481.383 (border-box)
+2. 481.383 (sin border-box)
+
+Nota: No hay cambios porque las tarjetas no tiene definido margenes o padding.

@@ -27,6 +27,14 @@
   /* 48px */
 }
 
+
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--font-body);
   color: var(--color-azul-noche);
@@ -243,6 +251,7 @@ fieldset
 .tarjeta
 {
   display: flex;
+  flex-grow: 1;
   flex-flow: column nowrap;
   align-items: center;
   background-color: var(--color-blanco);
