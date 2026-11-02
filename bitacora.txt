@@ -206,3 +206,19 @@ tarjeta - recorridos guiados |
 2. 481.383 (sin border-box)
 
 Nota: No hay cambios porque las tarjetas no tiene definido margenes o padding.
+
+
+Cuadricula de "Nuestra flota"
+-----------------------------------
+
++---------+----------------------+
+| Ancho   | Cantidad de columnas |
++---------+----------------------+
+| 1280px  | 4                    |
++---------+----------------------+
+| 900px   | 2                    |
++---------+----------------------+
+| 500px   | 1                    |
++---------+----------------------+
+
+Nota: El main tiene una anchura del 90%
