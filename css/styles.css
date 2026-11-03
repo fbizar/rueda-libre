@@ -98,13 +98,17 @@ a {
 }
 
 /* Menu */
-nav {
+.encabezado
+{
+  background-color: var(--color-azul-noche);
+  padding: var(--space-sm) var(--space-xl);
+}
+.encabezado
+{ 
   display: flex;
   flex-flow: row wrap;
   align-items: center;  
   justify-content: space-between;
-  background-color: var(--color-azul-noche);
-  padding: var(--space-sm) var(--space-md);
 }
 
 #menu {
@@ -148,18 +152,6 @@ nav {
   color: var(--color-blanco);
   font-size: 1.5rem;
   margin-right: var(--space-2xl);
-}
-
-/* Header */
-header
-{
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  height: 100%;
-  min-height: max-content;
-  max-height: 50vh;
-  padding: var(--space-md);
 }
 
 /* Footer */
@@ -241,7 +233,59 @@ fieldset
   padding: var(--space-lg);
 }
 
+.campo-form
+{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm)
+}
+
+.fila-form {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.fila--g-1-1 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.fila--g-2-1 {
+  grid-template-columns: 2fr 1fr;
+}
+
 /* Index.html */
+
+.portada
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(370px,2fr));
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  min-height: 60vh;
+}
+
+.portada-imagen
+{
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center left;
+  border-radius: 16px;
+}
+.portada-texto
+{
+  display: flex;
+  flex-direction: column;
+}
+.portada-botones
+{
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--space-sm);
+}
+
 #services{
   display: flex;
   flex-flow: row nowrap;
@@ -290,6 +334,7 @@ fieldset
   box-shadow: 0 0 10px 2px var(--color-naranja-pedal);
 }
 
+/* Nuestra flota */
 
 .flota
 {
@@ -304,7 +349,6 @@ fieldset
 {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
   align-items: center;
   background-color: var(--color-blanco);
   padding: var(--space-md);
@@ -313,6 +357,10 @@ fieldset
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 2px 8px color-mix(in srgb, var(--color-azul-noche) 10%, transparent)
+}
+.bici a
+{
+  margin-top: auto;
 }
 
 .bici img
@@ -323,10 +371,52 @@ fieldset
   object-fit: cover;
 }
 
+/* Nuestras rutas */
+
+.rutas
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+}
+.tarjeta-ruta
+{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: var(--color-blanco);
+  padding: var(--space-md);
+  border-radius: 16px;;
+  border: 1px solid color-mix(in srgb, var(--color-gris-asfalto) 25%, transparent);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--color-azul-noche) 10%, transparent);
+  max-width: 512px;
+}
+
+.tarjeta-ruta img
+{
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 /* reservas.html */
+
+.reservas-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-xl);
+  padding: var(--space-lg);
+}
+
 #schedule
 {
   width: fit-content;
+  height: fit-content;
 
   & dt 
   {

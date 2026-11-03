@@ -222,3 +222,28 @@ Cuadricula de "Nuestra flota"
 +---------+----------------------+
 
 Nota: El main tiene una anchura del 90%
+
+
+Layout en dos dimensiones
+-------------------------------------------
+
++----------------------+--------+------------------------------------------------------------+
+| Sección              | Layout | Justificación                                              |
++----------------------+--------+------------------------------------------------------------+
+| Portada              | grid   | Permite definir de forma más exacta la proporción de los   |
+|                      |        | elementos y es más fácil de configurar que en flex.        |
++----------------------+--------+------------------------------------------------------------+
+| Galería (rutas)      | flex   | Permite centrar la última fila cuando las tarjetas no      |
+|                      |        | caben todas en una misma línea (con grid no hubiera sido   |
+|                      |        | tan simple)                                                |
++----------------------+--------+------------------------------------------------------------+
+| Fila del formulario  | grid   | Igual que la portada: permite definir con más precisión    |
+|                      |        | el tamaño de las columnas.                                 |
++----------------------+--------+------------------------------------------------------------+
+| Encabezado           | flex   | Solo requiere alinear elementos horizontalmente y es más   |
+|                      |        | sencillo ubicarlos en los extremos, que era lo pedido.     |
++----------------------+--------+------------------------------------------------------------+
+| Pie de página        | flex   | Podrían funcionar ambos, pero elegí flex porque en este    |
+|                      |        | caso no era necesario que los elementos tuvieran el        |
+|                      |        | mismo ancho.                                               |
++----------------------+--------+------------------------------------------------------------+

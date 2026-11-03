@@ -19,25 +19,29 @@
 </head>
 
 <body>
-    <nav>
+    <header class="encabezado">
         <p class="logo">Rueda Libre</p>
-        <ul id="menu">
-            <li><a class="activo" href="index.html">Inicio</a></li>
-            <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
-            <li><a href="paginas/reservas.html">Reservas</a></li>
-        </ul>
-    </nav>
-    <header>
-        <img src="img/cover.jpg" alt="Portada" width="768">
-        <h1>Rueda Libre</h1>
-        <p>Bienvenido, ofrecemos servicios de alquiler y organización de recorridos guiados por la ciudad de
-            Medellín.</p>
-        <span><a class="btn-secundario" href="#contact">¿Dónde encontrarnos?</a> <a class="btn-primario"
-                href="paginas/reservas.html">Reservar
-                ahora</a></span>
+        <nav>
+            <ul id="menu">
+                <li><a class="activo" href="index.html">Inicio</a></li>
+                <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
+                <li><a href="paginas/reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <section class="portada">
+            <img class="portada-imagen" src="img/cover.jpg" alt="Portada" width="768">
+            <div class="portada-texto">
+                <h1>Rueda Libre</h1>
+                <p>Bienvenido, ofrecemos servicios de alquiler y organización de recorridos guiados por la ciudad de
+                    Medellín.</p>
+                <div class="portada-botones"><a class="btn-secundario" href="#contact">¿Dónde encontrarnos?</a> <a
+                        class="btn-primario" href="paginas/reservas.html">Reservar
+                        ahora</a></div>
+            </div>
+        </section>
         <h2>¿Quiénes somos?</h2>
         <section id="about-us">
             <p>Rueda Libre es un emprendimiento de Medellín dedicado a hacer que moverse por la ciudad sea más fácil,
@@ -154,6 +158,26 @@
                 <a class="btn-primario" href="paginas/reservas.html">Reservar</a>
             </article>
         </section>
+
+        <h2>Nuestra rutas</h2>
+        <section class="rutas">
+            <article class="tarjeta-ruta">
+                <img src="img/rutas/rios-y-parques.png" alt="Foto de rios y parques">
+                <h3>Rios y parques</h3>
+                <p><strong>Nivel:</strong> I</p>
+            </article>
+            <article class="tarjeta-ruta">
+                <img src="img/rutas/sabores-de-barrio.jpg" alt="Foto de sabores de barrio">
+                <h3>Sabores de barrio</h3>
+                <p><strong>Nivel:</strong> II</p>
+            </article>
+            <article class="tarjeta-ruta">
+                <img src="img/rutas/reto-palmas.png" alt="Foto de reto de Las Palmas">
+                <h3>Reto Las palmas</h3>
+                <p><strong>Nivel:</strong> III</p>
+            </article>
+        </section>
+
 
         <h2>¿Cómo alquilar?</h2>
         <section id="rent">
