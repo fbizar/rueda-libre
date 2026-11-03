@@ -272,3 +272,34 @@ Problemas - mobile-first
 |                     | vacío por debajo.                  |                                                    |
 +---------------------+------------------------------------+----------------------------------------------------+
 
+
+Flota en bootstrap
+--------------------------------
+
+Tiempo utilizado: 32 minutos
+
+> Mi CSS vs Bootstrap
+// === estilos.css
+.flota {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+}
+
+// === clases de bootstrap
+<section class="container-12 container-sm container-md">
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-lg-4 col-xl-3">...</div>
+    </div>
+</section>
+
+
+> ¿Qué se me dio de Bootstrap sin esfuerzo?
+R/ Construir la grilla me pareció mucho más fácil e intuitivo, aunque al principio si me costo un poco comprender 
+el funcionamiento de las clases del layout.
+
+
+> ¿Qué control perdí con Bootstrap?
+R/ Siento que más que todo el ya no poder usar mis propias medias de spacings y breakpoints, sino conformarme 
+con las que proporciona bootstrap

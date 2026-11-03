@@ -337,7 +337,6 @@ fieldset {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--space-lg);
   padding: var(--space-lg);
-
 }
 
 .bici {
@@ -347,7 +346,6 @@ fieldset {
   background-color: var(--color-blanco);
   padding: var(--space-md);
   border-radius: 16px;
-  ;
   border: 1px solid color-mix(in srgb, var(--color-gris-asfalto) 25%, transparent);
   border-radius: 16px;
   overflow: hidden;
