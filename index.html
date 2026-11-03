@@ -22,25 +22,29 @@
 </head>
 
 <body>
-    <nav>
+    <header class="encabezado">
         <p class="logo">Rueda Libre</p>
-        <ul id="menu">
-            <li><a class="activo" href="index.html">Inicio</a></li>
-            <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
-            <li><a href="paginas/reservas.html">Reservas</a></li>
-        </ul>
-    </nav>
-    <header>
-        <img src="img/cover.jpg" alt="Portada" width="768">
-        <h1>Rueda Libre</h1>
-        <p>Bienvenido, ofrecemos servicios de alquiler y organización de recorridos guiados por la ciudad de
-            Medellín.</p>
-        <span><a class="btn-secundario" href="#contact">¿Dónde encontrarnos?</a> <a class="btn-primario"
-                href="paginas/reservas.html">Reservar
-                ahora</a></span>
+        <nav>
+            <ul id="menu">
+                <li><a class="activo" href="index.html">Inicio</a></li>
+                <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
+                <li><a href="paginas/reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <section class="portada">
+            <img class="portada-imagen" src="img/cover.jpg" alt="Portada" width="768">
+            <div class="portada-texto">
+                <h1>Rueda Libre</h1>
+                <p>Bienvenido, ofrecemos servicios de alquiler y organización de recorridos guiados por la ciudad de
+                    Medellín.</p>
+                <div class="portada-botones"><a class="btn-secundario" href="#contact">¿Dónde encontrarnos?</a> <a
+                        class="btn-primario" href="paginas/reservas.html">Reservar
+                        ahora</a></div>
+            </div>
+        </section>
         <h2>¿Quiénes somos?</h2>
         <section id="about-us">
             <p>Rueda Libre es un emprendimiento de Medellín dedicado a hacer que moverse por la ciudad sea más fácil,
@@ -104,6 +108,79 @@
                 </ul>
             </article>
         </section>
+
+        <h2>Nuestra flota</h2>
+        <section class="flota">
+            <article class="bici">
+                <img src="img/urbana-clasica.jpg" alt="Bicicleta Urbana Clásica">
+                <h3>Urbana Clásica</h3>
+                <p>Cómoda y liviana para las ciclorrutas.</p>
+                <p class="precio">$10.000 / hora</p>
+                <a class="btn-primario" href="paginas/reservas.html">Reservar</a>
+            </article>
+            <article class="bici">
+                <img src="img/urbana-plegable.png" alt="Bicicleta Urbana Plegable">
+                <h3>Urbana Plegable</h3>
+                <p>Se dobla en segundos; ideal para combinar con el metro.</p>
+                <p class="precio">$12.000 / hora</p>
+                <a class="btn-primario" href="paginas/reservas.html">Reservar</a>
+            </article>
+            <article class="bici">
+                <img src="img/montana-rail.jpg" alt="Bicicleta Montaña Rail">
+                <h3>Montaña Trail</h3>
+                <p>Suspensión delantera y 21 cambios para las subidas.</p>
+                <p class="precio">$15.000 / hora</p>
+                <a class="btn-primario" href="paginas/reservas.html">Reservar</a>
+            </article>
+            <article class="bici">
+                <img src="img/gravel-aventura.png" alt="Bicicleta Gravel Aventura">
+                <h3>Gravel Aventura</h3>
+                <p>Para rutas mixtas de asfalto y destapado.</p>
+                <p class="precio">$18.000 / hora</p>
+                <a class="btn-primario" href="paginas/reservas.html">Reservar</a>
+            </article>
+            <article class="bici">
+                <img src="img/electrica-urbana.png" alt="Bicicleta Eléctrica Urbana">
+                <h3>Eléctrica Urbana</h3>
+                <p>Asistencia eléctrica con 45 km de autonomía.</p>
+                <p class="precio">$25.000 / hora</p>
+                <a class="btn-primario" href="paginas/reservas.html">Reservar</a>
+            </article>
+            <article class="bici">
+                <img src="img/infantil.jpg" alt="Bicicleta Infantil">
+                <h3>Infantil</h3>
+                <p>Para niños de 6 a 10 años.</p>
+                <p class="precio">$8.000 / hora</p>
+                <a class="btn-primario" href="paginas/reservas.html">Reservar</a>
+            </article>
+            <article class="bici">
+                <img src="img/tandem.jpg" alt="Bicicleta Tándem para dos personas">
+                <h3>Tándem</h3>
+                <p>Para dos personas; perfecta para pasear en pareja.</p>
+                <p class="precio">$20.000 / hora</p>
+                <a class="btn-primario" href="paginas/reservas.html">Reservar</a>
+            </article>
+        </section>
+
+        <h2>Nuestra rutas</h2>
+        <section class="rutas">
+            <article class="tarjeta-ruta">
+                <img src="img/rutas/rios-y-parques.png" alt="Foto de rios y parques">
+                <h3>Rios y parques</h3>
+                <p><strong>Nivel:</strong> I</p>
+            </article>
+            <article class="tarjeta-ruta">
+                <img src="img/rutas/sabores-de-barrio.jpg" alt="Foto de sabores de barrio">
+                <h3>Sabores de barrio</h3>
+                <p><strong>Nivel:</strong> II</p>
+            </article>
+            <article class="tarjeta-ruta">
+                <img src="img/rutas/reto-palmas.png" alt="Foto de reto de Las Palmas">
+                <h3>Reto Las palmas</h3>
+                <p><strong>Nivel:</strong> III</p>
+            </article>
+        </section>
+
 
         <h2>¿Cómo alquilar?</h2>
         <section id="rent">

@@ -27,6 +27,13 @@
   /* 48px */
 }
 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--font-body);
   color: var(--color-azul-noche);
@@ -36,8 +43,8 @@ body {
 }
 
 /* Main */
-main{
-  width: 96rem;
+main {
+  width: 90%;
   margin: 0 auto;
   padding-bottom: var(--space-md);
 }
@@ -90,13 +97,18 @@ a {
 }
 
 /* Menu */
-nav {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;  
-  justify-content: space-between;
+.encabezado {
   background-color: var(--color-azul-noche);
-  padding: var(--space-sm) var(--space-md);
+  padding: var(--space-sm) var(--space-xl);
+}
+
+.encabezado {
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #menu {
@@ -142,22 +154,11 @@ nav {
   margin-right: var(--space-2xl);
 }
 
-/* Header */
-header
-{
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  height: 100%;
-  min-height: max-content;
-  max-height: 50vh;
-  padding: var(--space-md);
-}
-
 /* Footer */
 footer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: flex-start;
   margin-top: auto;
   padding: var(--space-xl) var(--space-lg);
@@ -165,8 +166,7 @@ footer {
   background-color: var(--color-blanco);
 }
 
-footer > div 
-{
+footer>div {
   display: flex;
   flex-direction: column;
 }
@@ -176,8 +176,7 @@ footer p {
 }
 
 /* Floating */
-#btn-whatsapp
-{
+#btn-whatsapp {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -191,8 +190,7 @@ footer p {
   color: var(--color-blanco);
 }
 
-#btn-whatsapp:hover
-{
+#btn-whatsapp:hover {
   background-color: var(--color-gris-asfalto);
 }
 
@@ -217,14 +215,13 @@ textarea:focus-visible {
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-verde-ruta) 20%, transparent);
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: var(--space-lg);
 }
 
-fieldset
-{
+fieldset {
   display: flex;
   flex-flow: column wrap;
   border: 2px solid var(--color-gris-asfalto);
@@ -233,16 +230,67 @@ fieldset
   padding: var(--space-lg);
 }
 
-/* Index.html */
-#services{
+.campo-form {
   display: flex;
-  flex-flow: row nowrap;
-  gap: var(--space-md)
+  flex-direction: column;
+  gap: var(--space-sm)
 }
 
-.tarjeta
-{
+.fila-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+
+/* Index.html */
+/* ===== BASE (Una sola columna) */
+.portada {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: repeat(auto-fit,minmax(370px,2fr)); */
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  min-height: 60vh;
+}
+
+.portada-imagen {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center left;
+  border-radius: 16px;
+}
+
+.portada-texto {
   display: flex;
+  flex-direction: column;
+}
+
+.portada-botones {
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--space-sm);
+}
+
+#services {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+
+  & .tarjeta {
+    flex: 0 1 30rem;
+    /* No crece, puede encogerse y su base de tamaño es de 30rem */
+  }
+}
+
+.tarjeta {
+  display: flex;
+  flex-grow: 1;
   flex-flow: column nowrap;
   align-items: center;
   background-color: var(--color-blanco);
@@ -253,21 +301,24 @@ fieldset
   box-shadow: 0 2px 8px color-mix(in srgb, var(--color-azul-noche) 10%, transparent)
 }
 
-.tarjeta img
-{
+.tarjeta img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  aspect-ratio: 4/3;
+  object-fit: cover;
   border-radius: 8px;
 }
 
-.tarjeta.nuevo
-{
+.tarjeta a {
+  margin-top: auto;
+}
+
+.tarjeta.nuevo {
   box-shadow: 0 0 10px 2px var(--color-naranja-pedal);
 }
 
-.etiqueta-nuevo
-{
+.etiqueta-nuevo {
   display: inline-flex;
   position: absolute;
   width: fit-content;
@@ -279,19 +330,107 @@ fieldset
   box-shadow: 0 0 10px 2px var(--color-naranja-pedal);
 }
 
-/* reservas.html */
-#schedule
-{
-  width: fit-content;
+/* Nuestra flota */
 
-  & dt 
-  {
+.flota {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+
+}
+
+.bici {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: var(--color-blanco);
+  padding: var(--space-md);
+  border-radius: 16px;
+  ;
+  border: 1px solid color-mix(in srgb, var(--color-gris-asfalto) 25%, transparent);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--color-azul-noche) 10%, transparent)
+}
+
+.bici a {
+  margin-top: auto;
+}
+
+.bici img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* Nuestras rutas */
+
+.rutas {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+}
+
+.tarjeta-ruta {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: var(--color-blanco);
+  padding: var(--space-md);
+  border-radius: 16px;
+  border: 1px solid color-mix(in srgb, var(--color-gris-asfalto) 25%, transparent);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--color-azul-noche) 10%, transparent);
+  min-height: fit-content;
+  max-height: fit-content;
+  flex: 0 1 25rem;
+  /* No crece, puede encogerse y su base de tamaño es de 25rem */
+}
+
+.tarjeta-ruta img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* reservas.html */
+/* ==== Base (Una sola columna) */
+
+.reservas-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: 2fr 1fr; */
+  gap: var(--space-xl);
+  padding: var(--space-md);
+}
+
+#formulario {
+  min-width: 0;
+}
+
+#comments
+{
+  width: 100%;
+}
+
+
+#schedule {
+  width: fit-content;
+  height: fit-content;
+
+  & dt {
     font-weight: 600;
   }
 }
 
-#btn-submit
-{
+#btn-submit {
   align-self: center;
   width: 50%;
   font-weight: 600;
@@ -305,6 +444,7 @@ table {
   background-color: var(--color-blanco);
   color: var(--color-azul-noche);
   font-family: var(--font-body);
+  font-size: 0.875rem;
   border-radius: 16px;
   overflow: hidden;
 }
@@ -328,7 +468,8 @@ thead th {
 
 th,
 td {
-  padding: var(--space-sm) var(--space-md);
+  padding: var(--space-xs);
+  overflow-wrap: anywhere;
 }
 
 tbody tr {
@@ -353,3 +494,55 @@ td a {
   text-decoration: underline;
 }
 
+/* === TABLET (768px) ===== */
+
+@media (min-width: 768px) {
+
+  .portada {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--space-xl);
+    padding: var(--space-lg);
+  }
+
+  .rutas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: var(--space-lg);
+  }
+
+  table {
+    font-size: 1rem;
+  }
+
+  th,
+  td {
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .reservas-layout {
+    grid-template-columns: 1fr;
+    padding: var(--space-lg);
+  }
+
+  .fila--g-1-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fila--g-2-1 {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+}
+
+/* ===== ESCRITORIO (1200px) ===== */
+@media (min-width: 1200px) {
+
+  .reservas-layout {
+    grid-template-columns: 2fr 1fr;
+  }
+}

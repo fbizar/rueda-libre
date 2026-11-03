@@ -1,5 +1,10 @@
 Rueda Libre.
 
+######################################
+            Semana 1
+######################################
+
+
 Peticiones
 -----------------------------
 http://127.0.0.1:5500/index.html
@@ -126,14 +131,6 @@ Usos de colores
 | #FFFFFF              |                                                    |
 +------------------------+----------------------------------------------------+
 
-
-Conflictos de selectores
-----------------------------------------
-#menu a y .activo no estaban funcionando porque no hay ningún elemento en el html que tenga referenciado el id y clase declarados.
-A pesar de que #menu tiene seguido un "a", este segundo no se aplica porque es necesario que estos links estén contenidos por un padre que tenga el id menu.
-Tal cuál como expresa su especificidad (1,0,1) = (id,-,elemento)
-.activo solo requiere que cualquier elemento defina como valor "activo" del atributo class, ya que su especificidad es solo clases (0,1,0)
-
 Layout
 -----------------------------------------
 
@@ -179,3 +176,99 @@ Layout
 +------------------------------------------------------------+
 |   <footer> Copyright                                       |
 +------------------------------------------------------------+
+
+######################################################
+                    Semana 2
+######################################################
+
+Herencia de propiedades
+---------------------------------------
++--------------+-------------------+------------------------------+
+|   Elemento   | Heredadas de body |   No Heredadas de body       |   
++--------------+-------------------+------------------------------+
+|   <p>        | color: var(...);  | background-color: var (...); |
++--------------+-------------------+------------------------------+
+
+
+Conflictos de selectores
+----------------------------------------
+#menu a y .activo no estaban funcionando porque no hay ningún elemento en el html que tenga referenciado el id y clase declarados.
+A pesar de que #menu tiene seguido un "a", este segundo no se aplica porque es necesario que estos links estén contenidos por un padre que tenga el id menu.
+Tal cuál como expresa su especificidad (1,0,1) = (id,-,elemento)
+.activo solo requiere que cualquier elemento defina como valor "activo" del atributo class, ya que su especificidad es solo clases (0,1,0)
+
+
+Tamaños con y sin box-sizing: border-box
+---------------------------------------------
+
+tarjeta - recorridos guiados | 
+1. 481.383 (border-box)
+2. 481.383 (sin border-box)
+
+Nota: No hay cambios porque las tarjetas no tiene definido margenes o padding.
+
+
+Cuadricula de "Nuestra flota"
+-----------------------------------
+
++---------+----------------------+
+| Ancho   | Cantidad de columnas |
++---------+----------------------+
+| 1280px  | 4                    |
++---------+----------------------+
+| 900px   | 2                    |
++---------+----------------------+
+| 500px   | 1                    |
++---------+----------------------+
+
+Nota: El main tiene una anchura del 90%
+
+
+Layout en dos dimensiones
+-------------------------------------------
+
++----------------------+--------+------------------------------------------------------------+
+| Sección              | Layout | Justificación                                              |
++----------------------+--------+------------------------------------------------------------+
+| Portada              | grid   | Permite definir de forma más exacta la proporción de los   |
+|                      |        | elementos y es más fácil de configurar que en flex.        |
++----------------------+--------+------------------------------------------------------------+
+| Galería (rutas)      | flex   | Permite centrar la última fila cuando las tarjetas no      |
+|                      |        | caben todas en una misma línea (con grid no hubiera sido   |
+|                      |        | tan simple)                                                |
++----------------------+--------+------------------------------------------------------------+
+| Fila del formulario  | grid   | Igual que la portada: permite definir con más precisión    |
+|                      |        | el tamaño de las columnas.                                 |
++----------------------+--------+------------------------------------------------------------+
+| Encabezado           | flex   | Solo requiere alinear elementos horizontalmente y es más   |
+|                      |        | sencillo ubicarlos en los extremos, que era lo pedido.     |
++----------------------+--------+------------------------------------------------------------+
+| Pie de página        | flex   | Podrían funcionar ambos, pero elegí flex porque en este    |
+|                      |        | caso no era necesario que los elementos tuvieran el        |
+|                      |        | mismo ancho.                                               |
++----------------------+--------+------------------------------------------------------------+
+
+
+Problemas - mobile-first
+---------------------------------
+
++---------------------+------------------------------------+----------------------------------------------------+
+| Elemento            | Problema                           | Solución                                           |
++---------------------+------------------------------------+----------------------------------------------------+
+| Tabla de recorridos | Su ancho no se ajustaba en         | Se redujo el tamaño del texto y se usó la          |
+|                     | pantallas de menos de 768px.       | propiedad overflow-wrap, que permitió que los      |
+|                     |                                    | textos saltaran de línea y se acomodaran al        |
+|                     |                                    | ancho de la pantalla.                              |
++---------------------+------------------------------------+----------------------------------------------------+
+| Formulario          | Su ancho no se ajustaba en         | Al contenedor del formulario (section) se le       |
+|                     | pantallas de menos de 768px.       | agregó min-width: 0 para sobrescribir el valor     |
+|                     |                                    | por defecto y así ajustarse al tamaño de la        |
+|                     |                                    | pantalla.                                          |
++---------------------+------------------------------------+----------------------------------------------------+
+| Tarjetas de rutas   | Su altura variaba al reducirse la  | Se usaron min-height y max-height, ambos con       |
+|                     | pantalla (menos de 1200px) o al    | fit-content.                                       |
+|                     | hacer zoom: se tapaba parte del    |                                                    |
+|                     | contenido o quedaba mucho espacio  |                                                    |
+|                     | vacío por debajo.                  |                                                    |
++---------------------+------------------------------------+----------------------------------------------------+
+
