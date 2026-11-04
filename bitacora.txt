@@ -303,3 +303,25 @@ el funcionamiento de las clases del layout.
 > ¿Qué control perdí con Bootstrap?
 R/ Siento que más que todo el ya no poder usar mis propias medias de spacings y breakpoints, sino conformarme 
 con las que proporciona bootstrap
+
+
+Utilidades
+----------------------------------
+
+> rounded:
+ Para redondear las esquinas de los elementos como imágenes y contenedores. También su redondez puede
+aplicarse con el número de escalas predefinidas.
+
+> img-fluid:
+Hace que una imagen sea responsive, aplica un max-width del 100% con height auto.
+
+> h1-h6:
+Equivalente a fs-{n}, para aplicar tamaños y aspectos de títulos en cualquier etiqueta de texto.
+
+> bg-warning:
+ Aplica un fondo de color para elementos tipo alerta o destacados. Su color puede cambiarse desde css
+modificando las variables --bs-warning y --bs-warning-rgb.
+
+> text-decoration-none: 
+Le quita los adornos a los textos como por ejemplo el subrayado en los a links.
+
