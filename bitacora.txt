@@ -325,3 +325,16 @@ modificando las variables --bs-warning y --bs-warning-rgb.
 > text-decoration-none: 
 Le quita los adornos a los textos como por ejemplo el subrayado en los a links.
 
+
+Conflictos migración Inicio
+-------------------------------
+
+> body > font-family
+Se quitó font-family de body y se sobrescribió la tipografía usando la variable: --bs-body-font-family
+
+a > color & text-decoration
+Se quitó estilos para a, ya bootstrap los pone automáticamente.
+
+main > width
+Se quitaron los estilos de main. Los containers ya tienen definido su ancho.
+
