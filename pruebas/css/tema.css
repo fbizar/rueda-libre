@@ -1,0 +1,35 @@
+:root {
+  /* Azul Noche: texto y títulos */
+  --bs-body-color: #14213D;
+  --bs-body-color-rgb: 20, 33, 61;
+  --bs-heading-color: #14213D;
+  --bs-dark: #14213D;
+  --bs-dark-rgb: 20, 33, 61;
+
+  /* Crema: fondo general */
+  --bs-body-bg: #FAF6EF;
+  --bs-body-bg-rgb: 250, 246, 239;
+
+  /* Verde Ruta: enlaces y color principal */
+  --bs-primary: #1E7A4F;
+  --bs-primary-rgb: 30, 122, 79;
+  --bs-link-color: #1E7A4F;
+  --bs-link-color-rgb: 30, 122, 79;
+  --bs-link-hover-color: #14213D;
+
+  /* Gris Asfalto: texto secundario */
+  --bs-secondary: #5B6470;
+  --bs-secondary-rgb: 91, 100, 112;
+  --bs-secondary-color: #5B6470;
+
+  /* Naranja Pedal: destacados (solo como fondo) */
+  --bs-warning: #F39A2B;
+  --bs-warning-rgb: 243, 154, 43;
+
+  /* Tipografía */
+  --bs-body-font-family: 'Open Sans', 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+}
