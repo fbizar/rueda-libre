@@ -7,9 +7,9 @@
     <title>Tarifas | Rueda libre</title>
     <meta name="description" content="Conozcas las tarifas de nuestras bicicletas y recorridos.">
     <meta name="author" content="Rueda Libre">
-    <!-- Bootstrap --> 
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Montserrat 700 and OpenSans 400 & 600 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,94 +35,116 @@
         </nav>
     </header>
     <main>
-        <section id="tarifas-titulo">
+        <section class="container-xl py-5">
             <h1>Tarifas</h1>
-            <p>Conozca a continuación las tarifas de nuestras bicicletas y recorridos alrededor de la ciudad:</p>
+            <p class="mb-4">Conozca a continuación las tarifas de nuestras bicicletas y recorridos alrededor de la ciudad:</p>
+            <article class="row g-5">
+                <div class="col-12 col-lg-8">
+                    <div class="d-flex flex-column gap-2">
+                        <table id="bicicletas" class="table table-striped table-hover">
+                            <caption class="caption-top">Tarifas de bicicletas</caption>
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">Tipo de bicicleta</th>
+                                    <th scope="col">1 hora</th>
+                                    <th scope="col">Medio día (4 h)</th>
+                                    <th scope="col">Día completo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Urbana</th>
+                                    <td>$10.000</td>
+                                    <td>$30.000</td>
+                                    <td>$50.000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Montaña</th>
+                                    <td>$15.000</td>
+                                    <td>$45.000</td>
+                                    <td>$70.000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Eléctrica</th>
+                                    <td>$25.000</td>
+                                    <td>$70.000</td>
+                                    <td>$110.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="mb-2">* Todas las tarifas incluyen <span class="fw-bold">casco y candado</span>.</p>
+                        <!-- Recorridos -->
+                        <table id="recorridos" class="table table-striped table-hover">
+                            <caption class="caption-top">Tarifas de recorridos</caption>
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">Recorrido</th>
+                                    <th scope="col">Distancia</th>
+                                    <th scope="col">Duración</th>
+                                    <th scope="col">Nivel</th>
+                                    <th scope="col">Precio por persona</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Río y Parques</th>
+                                    <td>12 km</td>
+                                    <td>2 h</td>
+                                    <td>Fácil</td>
+                                    <td>$45.000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Sabores de Barrio</th>
+                                    <td>18 km</td>
+                                    <td>3 h</td>
+                                    <td>Medio</td>
+                                    <td>$60.000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Reto Las Palmas</th>
+                                    <td>25 km</td>
+                                    <td>4 h</td>
+                                    <td>Difícil</td>
+                                    <td>$85.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>* Los recorridos salen <strong>sábados y domingos</strong> a las <em>7:00 a. m</em>.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="d-flex flex-column">
+                        <div class="card h-100 rounded-4">
+                            <div class="card-body d-flex flex-column gap-2">
+                                <p class="fs-3 fw-bold card-title">¿Qué llevar?</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-start align-items-center gap-3">
+                                        <span class="badge text-bg-secondary rounded-pill">1</span>
+                                        Ropa cómoda
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-start align-items-center gap-3">
+                                        <span class="badge text-bg-secondary rounded-pill">2</span>
+                                        Agua
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-start align-items-center gap-3">
+                                        <span class="badge text-bg-secondary rounded-pill">3</span>
+                                        Protector solar
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-start align-items-center gap-3">
+                                        <span class="badge text-bg-secondary rounded-pill">4</span>
+                                        Documento de identidad
+                                    </li>
+                                </ul>
+                                <a class="btn btn-primary" href="reservas.html">Reservar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
-        <section id="bicicletas">
-            <table>
-                <caption>Tarifas de bicicletas</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Tipo de bicicleta</th>
-                        <th scope="col">1 hora</th>
-                        <th scope="col">Medio día (4 h)</th>
-                        <th scope="col">Día completo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Urbana</th>
-                        <td>$10.000</td>
-                        <td>$30.000</td>
-                        <td>$50.000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Montaña</th>
-                        <td>$15.000</td>
-                        <td>$45.000</td>
-                        <td>$70.000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Eléctrica</th>
-                        <td>$25.000</td>
-                        <td>$70.000</td>
-                        <td>$110.000</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>* Todas las tarifas incluyen casco y candado.</p>
-        </section>
-
-        <section id="recorridos">
-            <table>
-                <caption>Tarifas de recorridos</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Recorrido</th>
-                        <th scope="col">Distancia</th>
-                        <th scope="col">Duración</th>
-                        <th scope="col">Nivel</th>
-                        <th scope="col">Precio por persona</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Río y Parques</th>
-                        <td>12 km</td>
-                        <td>2 h</td>
-                        <td>Fácil</td>
-                        <td>$45.000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Sabores de Barrio</th>
-                        <td>18 km</td>
-                        <td>3 h</td>
-                        <td>Medio</td>
-                        <td>$60.000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Reto Las Palmas</th>
-                        <td>25 km</td>
-                        <td>4 h</td>
-                        <td>Difícil</td>
-                        <td>$85.000</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>* Los recorridos salen <strong>sábados y domingos</strong> a las <em>7:00 a. m</em>.</p>
-            <p><strong>Qué llevar</strong>:</p>
-            <ul>
-                <li>Ropa cómoda</li>
-                <li>Agua</li>
-                <li>Protector solar</li>
-                <li>Documento de identidad</li>
-            </ul>
-            <a class="btn-primario" href="reservas.html">Reservar ahora</a>
-        </section>
-        <a id="btn-whatsapp" href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer"><img
-               
-                src="../img/whatsapp-glyph.png" width="48" alt="Hablar por WhatsApp"></a>
+        <a id="btn-whatsapp" href="https://wa.me/573000000000" target="_blank"
+            rel="noopener noreferrer"><img src="../img/whatsapp-glyph.png" width="48"
+                alt="Hablar por WhatsApp"></a>
     </main>
     <footer>
         <div>

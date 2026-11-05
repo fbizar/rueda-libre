@@ -361,7 +361,7 @@ fieldset {
 
 
 /* Table */
-table {
+/* table {
   width: 100%;
   border-collapse: collapse;
   background-color: var(--color-blanco);
@@ -415,7 +415,7 @@ tbody th {
 td a {
   color: var(--color-verde-ruta);
   text-decoration: underline;
-}
+} */
 
 /* === TABLET (768px) ===== */
 
