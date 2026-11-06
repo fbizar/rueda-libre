@@ -338,3 +338,47 @@ Se quitó estilos para a, ya bootstrap los pone automáticamente.
 main > width
 Se quitaron los estilos de main. Los containers ya tienen definido su ancho.
 
+
+Comparación entre v1.5 y v2.0
+------------------------------------------
+
++----------------+------------------------------+------------------------------+
+| Aspecto        | v1.5 (CSS puro)              | v2.0 beta (Bootstrap)        |
++----------------+------------------------------+------------------------------+
+| Líneas de      | 548 líneas                   | 241 líneas                   |
+| styles.css     | Variables, tipografía,       | Variables, tipografía,       |
+|                | encabezado, menú, footer,    | encabezado, menú, footer     |
+|                | tarjetas, botones,           | y tablas                     |
+|                | formulario y tablas          |                              |
++----------------+------------------------------+------------------------------+
+| Diferencia     | Referencia                   | 307 líneas menos (-56 %)     |
++----------------+------------------------------+------------------------------+
+| Tiempo         | 4 días (16 horas)            | 2 días (8 horas)             |
+| invertido      |                              |                              |
+| (estimado)     |                              |                              |
++----------------+------------------------------+------------------------------+
+| Diferencia     | Referencia                   | 8 horas menos (-50 %)        |
++----------------+------------------------------+------------------------------+
+| Ventajas       | - Más control                | - Menos CSS                  |
+|                | - Sin dependencias           | - Estilos reutilizables      |
+|                |   externas                   | - Diseño más rápido          |
+|                | - Solo los estilos           | - Responsive más sencillo    |
+|                |   necesarios                 |                              |
++----------------+------------------------------+------------------------------+
+| Desventajas    | - Requiere más tiempo        | - Faltan utilidades para     |
+|                | - Estilos duplicados en      |   algunos elementos,         |
+|                |   elementos distintos        |   ej. el fieldset            |
+|                |   con características        | - Cuesta recuperar el        |
+|                |   comunes                    |   aspecto original           |
+|                |                              | - HTML más extenso y         |
+|                |                              |   repetitivo (clases en      |
+|                |                              |   cada elemento)             |
++----------------+------------------------------+------------------------------+
+
+> Conclusiones
+
+Bootstrap redujo el styles.css en un 56 % y el tiempo de desarrollo casi a al mitad, porque la distribución,
+las tarjetas, los botones y el formulario pasaron del CSS a las clases del HTML. 
+A cambio, se pierde parte del control: la versión 1.5 reproduce el diseño original
+con exactitud y no depende de ninguna librería, mientras que en la 2.0 hay elementos
+sin utilidad (como el fieldset) y recuperar el aspecto inicial exige más esfuerzo.

@@ -42,6 +42,10 @@
   box-sizing: border-box;
 }
 
+body
+{
+  font-family: var(--font-body);
+}
 
 h1,
 h2,
@@ -164,4 +168,74 @@ footer p {
 
 .object-position-left {
   object-position: left center;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-blanco);
+  color: var(--color-azul-noche);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+caption {
+  padding: var(--space-sm) 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--text-h5);
+  text-align: left;
+  color: var(--color-azul-noche);
+}
+
+thead th {
+  background-color: var(--color-azul-noche);
+  color: var(--color-blanco);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-align: left;
+}
+
+th,
+td {
+  padding: var(--space-xs);
+  overflow-wrap: anywhere;
+}
+
+tbody tr {
+  border-bottom: 1px solid color-mix(in srgb, var(--color-gris-asfalto) 25%, transparent);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--color-crema);
+}
+
+tbody tr:hover {
+  background-color: color-mix(in srgb, var(--color-naranja-pedal) 25%, var(--color-blanco));
+}
+
+tbody th {
+  text-align: left;
+  font-weight: 600;
+}
+
+td a {
+  color: var(--color-verde-ruta);
+  text-decoration: underline;
+}
+
+/* === TABLET (768px) =====  */
+
+@media (min-width: 768px) {
+  table {
+    font-size: 1rem;
+  }
+
+  th,
+  td {
+    padding: var(--space-sm) var(--space-md);
+  }
 }
