@@ -26,11 +26,11 @@
   --space-2xl: 3rem;
   /* 48px */
 
-    /* Crema: fondo general */
+  /* Crema: fondo general */
   --bs-body-bg: var(--color-crema);
   --bs-body-bg-rgb: 250, 246, 239;
 
-    /* Tipografía */
+  /* Tipografía */
   --bs-body-font-family: 'Open Sans', 'Segoe UI', Roboto, Arial, sans-serif;
 }
 
@@ -42,20 +42,6 @@
   box-sizing: border-box;
 }
 
-/* body {
-  font-family: var(--font-body);
-  color: var(--color-azul-noche);
-  background-color: var(--color-crema);
-  padding: 0;
-  margin: 0;
-} */
-
-/* Main */
-/* main {
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: var(--space-md);
-} */
 
 h1,
 h2,
@@ -65,43 +51,6 @@ h5,
 h6 {
   font-family: var(--font-heading);
   margin-bottom: var(--space-sm);
-}
-
-.texto-secundario {
-  color: var(--color-gris-asfalto);
-}
-
-/* a {
-  color: var(--color-verde-ruta);
-  text-decoration: underline;
-} */
-
-.btn-primario {
-  background-color: var(--color-verde-ruta);
-  color: #fff;
-  padding: var(--space-sm) var(--space-lg);
-  border-radius: var(--space-xs);
-  text-decoration: none;
-  border: none;
-}
-
-.btn-primario:hover {
-  background-color: var(--color-verde-ruta);
-  opacity: 0.8;
-}
-
-.btn-secundario {
-  background-color: var(--color-naranja-pedal);
-  color: var(--color-azul-noche);
-  padding: var(--space-sm) var(--space-lg);
-  border-radius: var(--space-xs);
-  text-decoration: none;
-  border: none;
-}
-
-.btn-secundario:hover {
-  background-color: var(--color-naranja-pedal);
-  opacity: 0.8;
 }
 
 /* Menu */
@@ -203,261 +152,16 @@ footer p {
   background-color: var(--color-gris-asfalto);
 }
 
-/* Forms */
-input,
-select,
-textarea {
-  border: 2px solid var(--color-gris-asfalto);
-  border-radius: 0.5rem;
-  background-color: var(--color-blanco);
-  padding: var(--space-sm) var(--space-md);
-  font-family: var(--font-body);
-  box-shadow: 0 0 0 10px transparent;
-  transition: border-color 0.15s ease, box-shadow 0.3s ease-out;
-}
-
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
-  outline: 2px solid transparent;
-  border-color: var(--color-verde-ruta);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-verde-ruta) 20%, transparent);
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-lg);
-}
-
-fieldset {
-  display: flex;
-  flex-flow: column wrap;
-  border: 2px solid var(--color-gris-asfalto);
-  border-radius: 8px;
-  gap: var(--space-md);
-  padding: var(--space-lg);
-}
-
-.campo-form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm)
-}
-
-.fila-form {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-md);
-}
-
-
 /* Index.html */
 /* Utils para portada (Bootstrap no tiene) */
-.min-vh-60
-{
+.min-vh-60 {
   min-height: 60vh;
 }
 
-.aspect-ratio-16-9
-{
+.aspect-ratio-16-9 {
   aspect-ratio: 16/9;
 }
 
 .object-position-left {
   object-position: left center;
-}
-
-#services {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: var(--space-md);
-  padding: var(--space-md);
-
-  & .tarjeta {
-    flex: 0 1 30rem;
-    /* No crece, puede encogerse y su base de tamaño es de 30rem */
-  }
-}
-
-.tarjeta {
-  display: flex;
-  flex-grow: 1;
-  flex-flow: column nowrap;
-  align-items: center;
-  background-color: var(--color-blanco);
-  padding: var(--space-md);
-  border: 1px solid color-mix(in srgb, var(--color-gris-asfalto) 25%, transparent);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px color-mix(in srgb, var(--color-azul-noche) 10%, transparent)
-}
-
-.tarjeta img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 4/3;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.tarjeta a {
-  margin-top: auto;
-}
-
-.tarjeta.nuevo {
-  box-shadow: 0 0 10px 2px var(--color-naranja-pedal);
-}
-
-.etiqueta-nuevo {
-  display: inline-flex;
-  position: absolute;
-  width: fit-content;
-  align-self: flex-end;
-  padding: var(--space-xs) var(--space-sm);
-  border-radius: 4px;
-  background-color: var(--color-naranja-pedal);
-  font-weight: 600;
-  box-shadow: 0 0 10px 2px var(--color-naranja-pedal);
-}
-
-/* reservas.html */
-/* ==== Base (Una sola columna) */
-
-.reservas-layout {
-  display: grid;
-  grid-template-columns: 1fr;
-  /* grid-template-columns: 2fr 1fr; */
-  gap: var(--space-xl);
-  padding: var(--space-md);
-}
-
-#formulario {
-  min-width: 0;
-}
-
-#comments
-{
-  width: 100%;
-}
-
-
-#schedule {
-  width: fit-content;
-  height: fit-content;
-
-  & dt {
-    font-weight: 600;
-  }
-}
-
-#btn-submit {
-  align-self: center;
-  width: 50%;
-  font-weight: 600;
-}
-
-
-/* Table */
-/* table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: var(--color-blanco);
-  color: var(--color-azul-noche);
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
-caption {
-  padding: var(--space-sm) 0;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: var(--text-h5);
-  text-align: left;
-  color: var(--color-azul-noche);
-}
-
-thead th {
-  background-color: var(--color-azul-noche);
-  color: var(--color-blanco);
-  font-family: var(--font-heading);
-  font-weight: 700;
-  text-align: left;
-}
-
-th,
-td {
-  padding: var(--space-xs);
-  overflow-wrap: anywhere;
-}
-
-tbody tr {
-  border-bottom: 1px solid color-mix(in srgb, var(--color-gris-asfalto) 25%, transparent);
-}
-
-tbody tr:nth-child(even) {
-  background-color: var(--color-crema);
-}
-
-tbody tr:hover {
-  background-color: color-mix(in srgb, var(--color-naranja-pedal) 25%, var(--color-blanco));
-}
-
-tbody th {
-  text-align: left;
-  font-weight: 600;
-}
-
-td a {
-  color: var(--color-verde-ruta);
-  text-decoration: underline;
-} */
-
-/* === TABLET (768px) ===== */
-
-@media (min-width: 768px) {
-  .rutas {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: var(--space-lg);
-  }
-
-  table {
-    font-size: 1rem;
-  }
-
-  th,
-  td {
-    padding: var(--space-sm) var(--space-md);
-  }
-
-  .reservas-layout {
-    grid-template-columns: 1fr;
-    padding: var(--space-lg);
-  }
-
-  .fila--g-1-1 {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .fila--g-2-1 {
-    grid-template-columns: 2fr 1fr;
-  }
-
-  footer {
-    flex-direction: row;
-  }
-}
-
-/* ===== ESCRITORIO (1200px) ===== */
-@media (min-width: 1200px) {
-
-  .reservas-layout {
-    grid-template-columns: 2fr 1fr;
-  }
 }
