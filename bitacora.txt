@@ -382,3 +382,48 @@ las tarjetas, los botones y el formulario pasaron del CSS a las clases del HTML.
 A cambio, se pierde parte del control: la versión 1.5 reproduce el diseño original
 con exactitud y no depende de ninguna librería, mientras que en la 2.0 hay elementos
 sin utilidad (como el fieldset) y recuperar el aspecto inicial exige más esfuerzo.
+
+
+Resumen migración a bootstrap - Rueda Libre v2.0 (Dia 3)
+------------------
+
+Se completó la migración del sitio de CSS propio a Bootstrap 5. Se incorporaron componentes interactivos que antes 
+no existían (menú colapsable, carrusel, modal y validación de formulario) y se personalizó el framework con la paleta,
+ los íconos, los elementos de contacto y un conjunto de clases propias del cliente para conservar la identidad visual de la marca.
+
+Cambios
+
+> 1. Navbar responsive con menú colapsable
+
+- Se implementó una barra de navegación que se adapta al tamaño de pantalla.
+- En celulares, el menú se pliega detrás de un botón de hamburguesa con aria-label, para que sea accesible.
+
+> 2. Flota y promociones
+
+- Se construyeron las tarjetas de la flota con la grilla de Bootstrap (una columna en celular y hasta cuatro en escritorio), con imágenes de tamaño uniforme.
+- Se agregó un carrusel de promociones con tres diapositivas: «Martes 2x1 en bicicletas urbanas», «20 % de descuento en eléctricas de lunes a jueves» 
+y «Si cumples años, el recorrido guiado es gratis».
+- El carrusel avanza automáticamente y solo incluye los controles de anterior y siguiente, sin indicadores.
+
+> 3. Formulario de reservas
+
+- Se agregó validación visual con las clases de Bootstrap en todos los campos, que marca los correctos e incorrectos y muestra pistas cuando no
+- se cumplen las condiciones (por ejemplo, «El nombre debe tener al menos 3 caracteres»).
+- Se incorporó una alerta con el recordatorio de traer el documento de identidad.
+- Se añadió un modal con las políticas de alquiler, que se abre desde el enlace del checkbox de aceptación y un listado de las 5 políticas.
+
+> 4. Identidad visual propia
+
+- Se sobrescribieron las variables de Bootstrap con los colores originales del cliente (Verde Ruta, Naranja Pedal, Azul Noche, Crema y Gris Asfalto), junto con la tipografía de marca.
+- Se personalizaron los componentes que no toman la paleta automáticamente (botones, alertas y listas).
+- Se rediseñó el footer con fondo Azul Noche, texto blanco y enlaces en Naranja Pedal con estado de hover, en línea con el encabezado.
+- Se integró Bootstrap Icons por CDN en la navbar, los datos de contacto, los beneficios y el enlace de WhatsApp. Los íconos decorativos se ocultan a los lectores de pantalla con aria-hidden, y los controles que solo tienen un ícono llevan aria-label.
+- Se rediseñó el botón flotante de WhatsApp: pasó de un id a una clase, con medidas fijas para mantener la forma circular y un z-index que evita que lo tape el contenido. Se corrigió el contraste del ícono y se añadieron estados de hover y foco de teclado.
+- Se crearon clases propias que complementan a Bootstrap sin modificar ninguna de sus clases:
+    - Utilidades de portada, que el framework no incluye: .min-vh-60 (altura mínima), .aspect-ratio-16-9 (proporción de la imagen) y .object-position-left (punto de enfoque de la imagen).
+    -.alerta-rl: variante de la alerta del recordatorio, con tinte de Naranja Pedal, texto Azul Noche y un trazo lateral de color.
+    - .btn-destacado: variante de botón en Naranja Pedal con texto Azul Noche, y estados hover y active en Azul Noche.
+    - .tarjeta-rl: complemento de las tarjetas, con fondo blanco y borde de marca para separarlas del fondo Crema.
+    - .titulo-seccion: estilo de los títulos de sección, con la tipografía de marca y un trazo decorativo en Verde Ruta.
+
+- También se tomaron dos capturas del antes y después de aplicar la identidad visual.Se pueden encontrar en img/capturas.
