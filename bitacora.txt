@@ -427,3 +427,31 @@ y «Si cumples años, el recorrido guiado es gratis».
     - .titulo-seccion: estilo de los títulos de sección, con la tipografía de marca y un trazo decorativo en Verde Ruta.
 
 - También se tomaron dos capturas del antes y después de aplicar la identidad visual.Se pueden encontrar en img/capturas.
+
+
+######################################################
+                    Semana 3
+######################################################
+
+Prototipo Rueda Nocturna - Tailwind
+---------------------------------------
+
+Dia 1 - Minireto 1
+> Botón "Inscribete": Bootstrap vs Tailwind
+
+En bootstrap para construir el botón se partió del componente btn combinandolo con btn-primary (u otra variante), y con ello se conseguía un botón 
+con bordes y con animaciones del hover. No obstante, con rounded-* y text-{color} era posible modificar su redondez y color del texto, pero para mayor personalización era 
+necesario modificar las variables de la clase de una variante de botón desde mi propio CSS.
+
+En Tailwind, en cambio, casi que cada clase es una propiedad del css, por lo que se logra el mismo resultado de bootstrap o hasta mejor, simplemente 
+referenciando clases sin dejar el html. Ello permite mayor control de colores e incluso de definir comportamientos de pseudo clases como hover.
+
+Para construir el botón utilice estas clases:
+1. inline-block                 - Muestra el botón como linea de bloque. Es un Display: inline-block;      
+2. bg-amber-400 text-slate-900  - Con estas apliqué el color del fondo y del texto. Los números son para elegir un tono del color. 
+3. mt-8                         - Margen desde arriba como en bootstrap, solo que 8 es una escala diferente:  (0.25rem x 8 = 2rem)
+4. font-semibold                - Fuente semi-negrilla
+5. px-6 py-3                    - relleno en x/y
+6. rounded-2xl                  - Redondez de tamaño 2xl (1rem)
+7. hover:bg-amber-200 hover:text-slate-950    - Cambia el color de fondo y texto al hacer hover. El color de fondo tiene un fondo más claro.
+8. focus:outline-hidden focus:ring-4  focus:ring-amber-600  - Agrega un borde hecho de box-shadow de 4px al hacer foco con tab.
