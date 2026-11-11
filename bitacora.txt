@@ -453,5 +453,18 @@ Para construir el botón utilice estas clases:
 4. font-semibold                - Fuente semi-negrilla
 5. px-6 py-3                    - relleno en x/y
 6. rounded-2xl                  - Redondez de tamaño 2xl (1rem)
-7. hover:bg-amber-200 hover:text-slate-950    - Cambia el color de fondo y texto al hacer hover. El color de fondo tiene un fondo más claro.
+7. hover:bg-amber-200 hover:text-slate-950    - Cambia el color de fondo y texto al hacer hover. El color de fondo tiene un tono más claro.
 8. focus:outline-hidden focus:ring-4  focus:ring-amber-600  - Agrega un borde hecho de box-shadow de 4px al hacer foco con tab.
+
+
+Dia 2 - Minireto 2
+> Clases CSS de output.css
+
+Encontré que en el css generado solo aparecen las clases que están usandose en los html dentro de la carpeta
+nocturna/, que es donde se instaló Tailwind.
+
+Esto ocurre gracias a la ejecución del comando: 
+$ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+
+que busca periodicamente dentro de los html si se está usando una clase utilería de Tailwind para agregar o
+incluso eliminar si es el caso, en el archivo src/output.css
