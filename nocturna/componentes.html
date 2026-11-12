@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rueda Nocturna - Componentes</title>
+    <!-- CSS Generado de Tailwind -->
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-350 py-5">
+    <!-- Botones -->
+    <section class="w-full text-center space-x-3">
+        <!-- Primario -->
+        <a class="inline-block bg-amber-500 mt-8 text-slate-900 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-amber-400 focus:outline-hidden focus:ring-4  focus:ring-amber-600"
+            href="#inscripcion">Inscríbete</a>
+        <!-- Secundario -->
+        <a class="inline-block bg-slate-500 text-slate-100 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-slate-400 focus:outline-hidden focus:ring-4  focus:ring-slate-600"
+            href="#inscripcion">Inscríbete</a>
+        <!-- De contorno -->
+        <a class="inline-block bg-transparent text-emerald-500 font-semibold px-6 py-3 rounded-2xl shadow-md border border-2 hover:bg-emerald-200/15 
+        focus:bg-emerald-200/15 focus:outline-hidden focus:ring-4  focus:ring-emerald-600"
+            href="#inscripcion">Inscríbete</a>
+    </section>
+    <!-- Tarjeta -->
+    <section class="w-full mt-8">
+        <article
+            class="max-w-lg mx-auto bg-white border border-slate-200 border-2 rounded-2xl shadow-md overflow-hidden transition-all hover:shadow-lg hover:border-slate-400">
+            <img class="w-full h-48 object-cover" src="../img/rutas/rios-y-parques.png"
+                alt="Ciclistas recorriendo el centro de Medellín de noche">
+            <!-- Card-body -->
+            <div class="p-5 space-y-3">
+                <span
+                    class="inline-block bg-emerald-100 text-xs text-emerald-800 font-semibold px-3 py-1 rounded-full">Fácil</span>
+                <h3 class="text-xl font-bold">Luces del Centro</h3>
+                <dl>
+                    <dt class="text-sm text-slate-400">Distancia</dt>
+                    <dd class="font-semibold">10 km</dd>
+                    <dt class="text-sm text-slate-400">Duración</dt>
+                    <dd class="font-semibold">2 h</dd>
+                    <dt class="text-sm text-slate-400">Punto de encuentro</dt>
+                    <dd class="font-semibold">Sede de Rueda Libre</dd>
+                </dl>
+                <p class="text-2xl font-bold text-slate-900">$55.000</p>
+                <a class="block bg-amber-500 mt-8 text-slate-900 font-semibold text-center px-6 py-3 rounded-2xl shadow-md hover:bg-amber-400 focus:outline-hidden focus:ring-4  focus:ring-amber-600"
+                    href="#inscripcion">Inscríbete</a>
+            </div>
+        </article>
+    </section>
+    <!-- Alertas -->
+    <section class="w-full mt-8 px-5 pb-4 space-y-2">
+        <!-- Información -->
+        <div role="alert" class="rounded-2xl border-l-4 border-slate-600 bg-slate-50 p-4 text-slate-900">
+            <p class="font-semibold">Información</p>
+            <p class="text-sm">Nuestro horario es de Lunes a Viernes de 7:00 a.m a 7:00 p.m.</p>
+        </div>
+        <!-- Éxito -->
+        <div role="alert" class="rounded-2xl border-l-4 border-emerald-600 bg-emerald-50 p-4 text-emerald-900">
+            <p class="font-semibold">¡Reserva confirmada!</p>
+            <p class="text-sm">Te enviamos los detalles a tu correo.</p>
+        </div>
+        <!-- Advertencia -->
+        <div role="alert" class="rounded-2xl border-l-4 border-amber-600 bg-amber-50 p-4 text-amber-900">
+            <p class="font-semibold">¡Importante!</p>
+            <p class="text-sm">Recuerda traer tu documento de identidad.</p>
+        </div>
+    </section>
+    <!-- Campos -->
+    <section class="w-full mt-8 px-5 space-y-2">
+        <div class="space-y-2">
+            <label for="correo" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+            <input type="email" id="correo" placeholder="tucorreo@example.com" class="w-full rounded-2xl border border-gray-300 px-3 py-2
+           focus:border-amber-700 focus:ring-2 focus:ring-amber-200 focus:outline-hidden">
+
+            <label for="celular" class="block text-sm mt-3 font-medium text-gray-700">Celular</label>
+            <input type="tel" id="celular" name="celular" placeholder="3001001000" pattern="3[0-9]{9}" 
+            class="w-full rounded-2xl border border-gray-300 px-3 py-2
+           focus:border-amber-700 focus:ring-2 focus:ring-amber-200 focus:outline-hidden" required>
+        </div>
+    </section>
+</body>
+
+</html>

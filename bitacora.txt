@@ -457,7 +457,7 @@ Para construir el botón utilice estas clases:
 8. focus:outline-hidden focus:ring-4  focus:ring-amber-600  - Agrega un borde hecho de box-shadow de 4px al hacer foco con tab.
 
 
-Dia 2 - Minireto 2
+Dia 1 - Minireto 2
 > Clases CSS de output.css
 
 Encontré que en el css generado solo aparecen las clases que están usandose en los html dentro de la carpeta
@@ -468,3 +468,16 @@ $ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 
 que busca periodicamente dentro de los html si se está usando una clase utilería de Tailwind para agregar o
 incluso eliminar si es el caso, en el archivo src/output.css
+
+
+Dia 1 - Minireto 4
+> Reglas del kit
+  - Radio de bordes: 
+       2xl 
+  - Escala de espaciado: 
+      p-5
+      space-y-3
+  - Colores:
+      amber
+      slate
+      emerald
