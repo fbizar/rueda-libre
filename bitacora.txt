@@ -565,3 +565,11 @@ Espaciado: space-y-2
 |             |  px-3 py-2                             |                       |                          |
 |             |  border-gray-300                       |                       |                          |
 +-------------+----------------------------------------+-----------------------+--------------------------+
+
+
+Dia 2 - Minireto 1 (Maquetación de Landing) 
+> Grid o flex para lista de ¿Cómo funciona?:
+
+En mi caso he elegido grid para la lista ya que los items son muy cortos y en escritorio queda mucho espacio vacio.
+Así que con grid se puede hacer que en móviles se muestre en una sola columna y en escritorio en 2, aprovechando mejor el espacio y más
+fácil de implementar que con flex.

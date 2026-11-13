@@ -10,95 +10,120 @@
 </head>
 
 <body class="bg-slate-350">
-    <section class="bg-slate-900 px-6 py-15 text-center text-white space-y-4 space-x-3">
-        <p class="uppercase text-sm tracking-wide font-semibold text-amber-500">
-            Nuevo · Jueves a sábado
-        </p>
-        <h1 class="text-4xl font-bold">Rueda Nocturna</h1>
-        <p class="text-slate-300 leading-relaxed max-w mx-auto">
-            Descubre Medellín en bici cuando se encienden las luces
-        </p>
-        <ul class="flex justify-center gap-6 mt-6 font-semibold">
-            <li>3 rutas</li>
-            <li class="font-light">Desde $55.000</li>
-        </ul>
-        <!-- Primario -->
-        <a class="inline-block bg-amber-400 mt-8 text-slate-900 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-amber-300 focus:outline-hidden focus:ring-4  focus:ring-amber-600"
-            href="#inscripcion">Inscríbete</a>
-        <!-- Secundario -->
-        <a class="inline-block bg-slate-500 text-slate-100 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-slate-400 focus:outline-hidden focus:ring-4  focus:ring-slate-600"
-            href="#inscripcion">Inscríbete</a>
-        <!-- De contorno -->
-        <a class="inline-block bg-transparent text-emerald-500 font-semibold px-6 py-3 rounded-2xl shadow-md border border-2 hover:bg-emerald-200/15 
+    <!-- Encabezado y navegación -->
+    <header class="top-0 sticky px-8 py-4 bg-slate-800 text-white flex justify-between  items-center">
+         <a class="text-2xl font-bold" href="index.html">Rueda Nocturna</a>
+         <nav class="flex flex-row gap-2 items-center">
+            <ul class="flex flex-row gap-2 items-center">
+                <li><a class="inline-block bg-slate-500 text-slate-100 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-slate-400 focus:outline-hidden focus:ring-4  focus:ring-slate-600" href="#principal">Inicio</a></li>
+                <li><a class="inline-block bg-slate-500 text-slate-100 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-slate-400 focus:outline-hidden focus:ring-4  focus:ring-slate-600" href="#rutas">Rutas</a></li>
+                <li><a class="inline-block bg-slate-500 text-slate-100 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-slate-400 focus:outline-hidden focus:ring-4  focus:ring-slate-600" href="#comofunciona">¿Cómo funciona?</a></li>
+            </ul>
+            <a class="inline-block bg-transparent text-emerald-500 font-semibold px-6 py-3 rounded-2xl shadow-md border-2 hover:bg-emerald-200/15 
         focus:bg-emerald-200/15 focus:outline-hidden focus:ring-4  focus:ring-emerald-600"
             href="#inscripcion">Inscríbete</a>
-    </section>
-    <!-- Rutas del campaña -->
-    <section class="px-6 py-3">
-        <h2 class="text-2xl font-bold mb-3">Rutas</h2>
-        <div class="w-full space-y-4">
-            <article class="max-w-lg mx-auto bg-white border border-slate-200 border-2 rounded-xl shadow-md overflow-hidden transition-all hover:shadow-lg hover:border-slate-400">
-                <img class="w-full h-48 object-cover" src="../img/rutas/rios-y-parques.png"
-                    alt="Ciclistas recorriendo el centro de Medellín de noche">
-                <!-- Card-body -->
-                <div class="p-5 space-y-3">
-                    <span class="inline-block bg-emerald-100 text-xs text-emerald-800 font-semibold px-3 py-1 rounded-full">Fácil</span>
-                    <h3 class="text-xl font-bold">Luces del Centro</h3>
-                    <dl>
-                        <dt class="text-sm text-slate-400">Distancia</dt>
-                        <dd class="font-semibold">10 km</dd>
-                        <dt class="text-sm text-slate-400">Duración</dt>
-                        <dd class="font-semibold">2 h</dd>
-                        <dt class="text-sm text-slate-400">Punto de encuentro</dt>
-                        <dd class="font-semibold">Sede de Rueda Libre</dd>
-                    </dl>
-                    <p class="text-2xl font-bold text-slate-900">$55.000</p>
-                    <a class="block bg-amber-400 mt-8 text-slate-900 font-semibold text-center px-6 py-3 rounded-2xl shadow-md hover:bg-amber-300 focus:outline-hidden focus:ring-4  focus:ring-amber-600"
-                        href="#inscripcion">Inscríbete</a>
-                </div>
-            </article>
-            <article class="max-w-lg mx-auto bg-white border border-slate-200 border-2 rounded-xl shadow-md overflow-hidden transition-all hover:shadow-lg hover:border-slate-400">
-                <img class="w-full h-48 object-cover" src="../img/rutas/rios-y-parques.png"
-                    alt="Ciclistas recorriendo el centro de Medellín de noche">
-                <!-- Card-body -->
-                <div class="p-5 space-y-3">
-                    <span class="inline-block bg-amber-100 text-xs text-amber-800 font-semibold px-3 py-1 rounded-full">Medio</span>
-                    <h3 class="text-xl font-bold">Miradores de la Ciudad</h3>
-                    <dl>
-                        <dt class="text-sm text-slate-400">Distancia</dt>
-                        <dd class="font-semibold">16 km</dd>
-                        <dt class="text-sm text-slate-400">Duración</dt>
-                        <dd class="font-semibold">3 h</dd>
-                        <dt class="text-sm text-slate-400">Punto de encuentro</dt>
-                        <dd class="font-semibold">Sede de Rueda Libre</dd>
-                    </dl>
-                    <p class="text-2xl font-bold text-slate-900">$75.000</p>
-                    <a class="block bg-amber-400 mt-8 text-slate-900 font-semibold text-center px-6 py-3 rounded-2xl shadow-md hover:bg-amber-300 focus:outline-hidden focus:ring-4  focus:ring-amber-600"
-                        href="#inscripcion">Inscríbete</a>
-                </div>
-            </article>
-            <article class="max-w-lg mx-auto bg-white border border-slate-200 border-2 rounded-xl shadow-md overflow-hidden transition-all hover:shadow-lg hover:border-slate-400">
-                <img class="w-full h-48 object-cover" src="../img/rutas/rios-y-parques.png"
-                    alt="Ciclistas recorriendo el centro de Medellín de noche">
-                <!-- Card-body -->
-                <div class="p-5 space-y-3">
-                    <span class="inline-block bg-red-100 text-xs text-red-800 font-semibold px-3 py-1 rounded-full">Difícil</span>
-                    <h3 class="text-xl font-bold">Luna en Las Palmas</h3>
-                    <dl>
-                        <dt class="text-sm text-slate-400">Distancia</dt>
-                        <dd class="font-semibold">22 km</dd>
-                        <dt class="text-sm text-slate-400">Duración</dt>
-                        <dd class="font-semibold">3,5 h</dd>
-                        <dt class="text-sm text-slate-400">Punto de encuentro</dt>
-                        <dd class="font-semibold">Sede de Rueda Libre</dd>
-                    </dl>
-                    <p class="text-2xl font-bold text-slate-900">$95.000</p>
-                    <a class="block bg-amber-400 mt-8 text-slate-900 font-semibold text-center px-6 py-3 rounded-2xl shadow-md hover:bg-amber-300 focus:outline-hidden focus:ring-4  focus:ring-amber-600"
-                        href="#inscripcion">Inscríbete</a>
-                </div>
-            </article>
-        </div>
-    </section>
+        </nav>
+    </header>
+    <!-- Principal -->
+    <main class="container mx-auto px-4 pb-8">
+        <section id="principal" class="bg-slate-100 px-6 py-15 text-center space-y-4 space-x-3 rounded-b-2xl">
+            <p class="uppercase text-sm tracking-wide font-semibold text-amber-700">
+                Nuevo · Jueves a sábado
+            </p>
+            <h1 class="text-4xl font-bold">Rueda Nocturna</h1>
+            <p class="text-slate-8 00 leading-relaxed max-w mx-auto">
+                Descubre Medellín en bici cuando se encienden las luces
+            </p>
+            <ul class="flex justify-center gap-6 mt-6 font-semibold">
+                <li>3 rutas</li>
+                <li class="font-light">Desde $55.000</li>
+            </ul>
+            <!-- Primario -->
+            <a class="inline-block bg-amber-500 text-slate-900 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-amber-400 focus:outline-hidden focus:ring-4  focus:ring-amber-600"
+            href="#inscripcion">Inscríbete</a>
+        </section>
+        <!-- Rutas del campaña -->
+        <section id="rutas" class="py-3 mt-8">
+            <h2 class="text-3xl font-bold mb-8">Rutas</h2>
+            <div class="grid grid-cols-3 gap-6">
+                <article class="max-w-lg bg-white border-2 border-slate-200 rounded-2xl shadow-md overflow-hidden transition-all hover:shadow-lg hover:border-slate-400">
+                    <img class="w-full h-48 object-cover" src="../img/rutas/rios-y-parques.png"
+                        alt="Ciclistas recorriendo el centro de Medellín de noche">
+                    <!-- Card-body -->
+                    <div class="p-5 space-y-3">
+                        <span class="inline-block bg-emerald-100 text-xs text-emerald-800 font-semibold px-3 py-1 rounded-full">Fácil</span>
+                        <h3 class="text-xl font-bold">Luces del Centro</h3>
+                        <dl>
+                            <dt class="text-sm text-slate-400">Distancia</dt>
+                            <dd class="font-semibold">10 km</dd>
+                            <dt class="text-sm text-slate-400">Duración</dt>
+                            <dd class="font-semibold">2 h</dd>
+                            <dt class="text-sm text-slate-400">Punto de encuentro</dt>
+                            <dd class="font-semibold">Sede de Rueda Libre</dd>
+                        </dl>
+                        <p class="text-2xl font-bold text-slate-900">$55.000</p>
+                        <a class="block bg-amber-500 mt-8 text-slate-900 font-semibold text-center px-6 py-3 rounded-2xl shadow-md hover:bg-amber-400 focus:outline-hidden focus:ring-4  focus:ring-amber-600"
+                            href="#inscripcion">Inscríbete</a>
+                    </div>
+                </article>
+                <article class="max-w-lg bg-white border-2 border-slate-200 rounded-2xl shadow-md overflow-hidden transition-all hover:shadow-lg hover:border-slate-400">
+                    <img class="w-full h-48 object-cover" src="../img/rutas/rios-y-parques.png"
+                        alt="Ciclistas recorriendo el centro de Medellín de noche">
+                    <!-- Card-body -->
+                    <div class="p-5 space-y-3">
+                        <span class="inline-block bg-amber-100 text-xs text-amber-800 font-semibold px-3 py-1 rounded-full">Medio</span>
+                        <h3 class="text-xl font-bold">Miradores de la Ciudad</h3>
+                        <dl>
+                            <dt class="text-sm text-slate-400">Distancia</dt>
+                            <dd class="font-semibold">16 km</dd>
+                            <dt class="text-sm text-slate-400">Duración</dt>
+                            <dd class="font-semibold">3 h</dd>
+                            <dt class="text-sm text-slate-400">Punto de encuentro</dt>
+                            <dd class="font-semibold">Sede de Rueda Libre</dd>
+                        </dl>
+                        <p class="text-2xl font-bold text-slate-900">$75.000</p>
+                        <a class="block bg-amber-500 mt-8 text-slate-900 font-semibold text-center px-6 py-3 rounded-2xl shadow-md hover:bg-amber-400 focus:outline-hidden focus:ring-4  focus:ring-amber-600"
+                            href="#inscripcion">Inscríbete</a>
+                    </div>
+                </article>
+                <article class="max-w-lg bg-white border-2 border-slate-200 rounded-2xl shadow-md overflow-hidden transition-all hover:shadow-lg hover:border-slate-400">
+                    <img class="w-full h-48 object-cover" src="../img/rutas/rios-y-parques.png"
+                        alt="Ciclistas recorriendo el centro de Medellín de noche">
+                    <!-- Card-body -->
+                    <div class="p-5 space-y-3">
+                        <span class="inline-block bg-red-100 text-xs text-red-800 font-semibold px-3 py-1 rounded-full">Difícil</span>
+                        <h3 class="text-xl font-bold">Luna en Las Palmas</h3>
+                        <dl>
+                            <dt class="text-sm text-slate-400">Distancia</dt>
+                            <dd class="font-semibold">22 km</dd>
+                            <dt class="text-sm text-slate-400">Duración</dt>
+                            <dd class="font-semibold">3,5 h</dd>
+                            <dt class="text-sm text-slate-400">Punto de encuentro</dt>
+                            <dd class="font-semibold">Sede de Rueda Libre</dd>
+                        </dl>
+                        <p class="text-2xl font-bold text-slate-900">$95.000</p>
+                        <a class="block bg-amber-500 mt-8 text-slate-900 font-semibold text-center px-6 py-3 rounded-2xl shadow-md hover:bg-amber-400 focus:outline-hidden focus:ring-4  focus:ring-amber-600"
+                            href="#inscripcion">Inscríbete</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Cómo funciona? -->
+         <section id="comofunciona" class="py-3 mt-8">
+            <h2 class="text-3xl font-bold mb-8">¿Cómo funciona?</h2>
+             <ol class="list-inside list-decimal grid grid-cols-1 gap-3">
+                <li class="p-4 border-l-4 border-slate-400 bg-slate-200 font-semibold rounded-2xl hover:bg-slate-300">Elige tu ruta</li>
+                <li class="p-4 border-l-4 border-slate-400 bg-slate-200 font-semibold rounded-2xl hover:bg-slate-300">Inscríbete</li>
+                <li class="p-4 border-l-4 border-slate-400 bg-slate-200 font-semibold rounded-2xl hover:bg-slate-300">Recoje tu equipo</li>
+                <li class="p-4 border-l-4 border-slate-400 bg-slate-200 font-semibold rounded-2xl hover:bg-slate-300">¡Rueda!</li>
+             </ol>
+         </section>
+
+        </main>
+        <footer class="bg-slate-800 text-white text-center py-4">
+               <p class="font-bold">Rueda Nocturna</p>
+               <p class="font-semibold">&copy; 2026. Medellín, Colombia</p>
+        </footer>
 </body>
 
 </html>
