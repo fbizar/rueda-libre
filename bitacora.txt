@@ -583,3 +583,57 @@ Dia 2 - Minireto 2
 3. El texto del botón de las tarjetas se sale de su fondo y no se ve completamente lo que dice.
 4. Los precios (texto destacado) se ven de forma parcial (se sale de la tarjeta, solo que overflow-hidden hace que el resto del contenido
 que se sale de los límites no se vea).
+
+> Corportamiento del diseño responsive en 360 px, 768 px, 1024 px y 1280 px
+
++------------------------+----------------+----------------+----------------+------------+
+| Elemento               | 360px          | 768px          | 1024px         | 1280px     |
++------------------------+----------------+----------------+----------------+------------+
+| Header                 | columna        | fila           | =              | =          |
++------------------------+----------------+----------------+----------------+------------+
+| Enlaces                | ocultos        | visibles       | =              | =          |
++------------------------+----------------+----------------+----------------+------------+
+| Botón Inscríbete       | bajo el logo   | en la fila     | =              | =          |
++------------------------+----------------+----------------+----------------+------------+
+| Padding horiz. header  | px-2 (8px)     | px-4 (16px)    | =              | =          |
++------------------------+----------------+----------------+----------------+------------+
+| Logo                   | text-xl        | =              | text-2xl       | =          |
++------------------------+----------------+----------------+----------------+------------+
+| Título principal       | text-3xl       | text-4xl       | =              | =          |
++------------------------+----------------+----------------+----------------+------------+
+| Títulos de sección     | text-2xl       | text-3xl       | =              | =          |
++------------------------+----------------+----------------+----------------+------------+
+| Tarjetas de rutas      | 1 col          | 2 cols         | 3 cols         | =          |
++------------------------+----------------+----------------+----------------+------------+
+| Pasos                  | 1 col          | 2 cols         | 4 cols         | =          |
++------------------------+----------------+----------------+----------------+------------+
+| Footer                 | flex-col       | flex-row       | =              | =          |
++------------------------+----------------+----------------+----------------+------------+
+| Espaciado secciones    | mt-4 (16px)    | mt-8 (32px)    | =              | =          |
++------------------------+----------------+----------------+----------------+------------+
+
+360px: 
+    1. Los enlaces no se muestran en el header, el botón inscríbete pasa a estar debajo del logo.
+    2. Las tarjetas de rutas se muestran en una sola columna.
+    3. Los pasos se muestran en una sola columna.
+    4. El título principal, el de las secciones y logo se muestran en un tamaño de texto: 3xl, 2xl y xl respectivamente.
+    5. El encabezado tiene un relleno horizontal (px) más pequeño: 8px (0.5 rem)
+    6. El espaciado entre secciones (mt) es de: mt-4 (16px)
+    7. Los textos del footer se muestran en columna, usando flex-col.
+
+768px:
+    1. Encabezado se muestra el fila y los enlaces están visibles.
+    2. Las tarjetas de las rutas se muestran en dos columnas.
+    3. Los pasos se muestran en dos columnas.
+    4. El título principal y el de las secciones se muestran en un tamaño de texto: 4xl y 3xl respectivamente.
+    5. Los textos del footer se muestran en fila.
+    6. El encabezado tiene un relleno horizontal (px) de: 16px (1 rem)
+    7. El espaciado entre secciones (mt) pasa a: mt-8 (32px)
+
+1024px:
+    1. Las tarjetas de las rutas se muestran en 3 columnas.
+    2. Los pasos se muestran en 4 columnas.
+    3. El logo pasa a tener un tamaño de texto 2xl.
+
+1280px:
+    1. No ocurren más cambios, se muestra igual que en 1024px.
