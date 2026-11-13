@@ -573,3 +573,13 @@ Dia 2 - Minireto 1 (Maquetación de Landing)
 En mi caso he elegido grid para la lista ya que los items son muy cortos y en escritorio queda mucho espacio vacio.
 Así que con grid se puede hacer que en móviles se muestre en una sola columna y en escritorio en 2, aprovechando mejor el espacio y más
 fácil de implementar que con flex.
+
+
+Dia 2 - Minireto 2
+> Elementos que se rompe en pantallas pequeñas (360px)
+
+1. Los enlaces y botón de la navegación se sale del encabezado.
+2. Las tarjetas se encogen demasiado, provocando que su contenido se divida en varias lineas.
+3. El texto del botón de las tarjetas se sale de su fondo y no se ve completamente lo que dice.
+4. Los precios (texto destacado) se ven de forma parcial (se sale de la tarjeta, solo que overflow-hidden hace que el resto del contenido
+que se sale de los límites no se vea).

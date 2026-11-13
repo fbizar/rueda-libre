@@ -14,7 +14,7 @@
     <header class="top-0 sticky px-8 py-4 bg-slate-800 text-white flex justify-between  items-center">
          <a class="text-2xl font-bold" href="index.html">Rueda Nocturna</a>
          <nav class="flex flex-row gap-2 items-center">
-            <ul class="flex flex-row gap-2 items-center">
+            <ul class="hidden md:flex flex-row gap-2 items-center">
                 <li><a class="inline-block bg-slate-500 text-slate-100 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-slate-400 focus:outline-hidden focus:ring-4  focus:ring-slate-600" href="#principal">Inicio</a></li>
                 <li><a class="inline-block bg-slate-500 text-slate-100 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-slate-400 focus:outline-hidden focus:ring-4  focus:ring-slate-600" href="#rutas">Rutas</a></li>
                 <li><a class="inline-block bg-slate-500 text-slate-100 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-slate-400 focus:outline-hidden focus:ring-4  focus:ring-slate-600" href="#comofunciona">¿Cómo funciona?</a></li>
@@ -45,7 +45,7 @@
         <!-- Rutas del campaña -->
         <section id="rutas" class="py-3 mt-8">
             <h2 class="text-3xl font-bold mb-8">Rutas</h2>
-            <div class="grid grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-6">
                 <article class="max-w-lg bg-white border-2 border-slate-200 rounded-2xl shadow-md overflow-hidden transition-all hover:shadow-lg hover:border-slate-400">
                     <img class="w-full h-48 object-cover" src="../img/rutas/rios-y-parques.png"
                         alt="Ciclistas recorriendo el centro de Medellín de noche">
@@ -111,7 +111,7 @@
         <!-- Cómo funciona? -->
          <section id="comofunciona" class="py-3 mt-8">
             <h2 class="text-3xl font-bold mb-8">¿Cómo funciona?</h2>
-             <ol class="list-inside list-decimal grid grid-cols-1 gap-3">
+             <ol class="list-inside list-decimal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
                 <li class="p-4 border-l-4 border-slate-400 bg-slate-200 font-semibold rounded-2xl hover:bg-slate-300">Elige tu ruta</li>
                 <li class="p-4 border-l-4 border-slate-400 bg-slate-200 font-semibold rounded-2xl hover:bg-slate-300">Inscríbete</li>
                 <li class="p-4 border-l-4 border-slate-400 bg-slate-200 font-semibold rounded-2xl hover:bg-slate-300">Recoje tu equipo</li>
