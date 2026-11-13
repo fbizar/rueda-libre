@@ -484,7 +484,7 @@ Espaciado: px6-px3
 | Primario   |  bg-amber-500        |   bg-amber-400   |  ring-4 ring-amber-600  |
 |            |  text-slate-900      |                  |                         |
 +------------+----------------------+------------------+-------------------------+
-| Secundario |  bg-slate-700        |   bg-slate-400   |  ring-4 ring-slate-600  |
+| Secundario |  bg-slate-700        |   bg-slate-600   |  ring-4 ring-slate-500  |
 |            |  text-slate-100      |                  |                         |
 +------------+----------------------+------------------+-------------------------+               
 | De         |  bg-transparent      |                  | ring-4 ring-emerald-600 |
