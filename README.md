@@ -31,7 +31,7 @@ Elegí **Bootstrap** para construir el sitio de Rueda Libre porque agilizó más
 
 **Reservas (reservas.html)**
 ![Captura de reservas desde escritorio.](img/capturas/rl-bootstrap-pc-reservas-1.png)
-![aptura de información de contacto en Reservas desde escritorio.](img/capturas/rl-bootstrap-pc-reservas-2.png)
+![Captura de información de contacto en Reservas desde escritorio.](img/capturas/rl-bootstrap-pc-reservas-2.png)
 
 
 ## Autor
